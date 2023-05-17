@@ -23,5 +23,10 @@ export const List: Tag.Interface[] =
 		'ID': 'SafeInsideOneFile',
 		'ReadableName': 'Safe inside one file',
 		'Description': 'Safe inside one file'
+	},
+	{
+		'ID': 'Configurable',
+		'ReadableName': 'Configurable',
+		'Description': 'Configurable'
 	}
 ]
