@@ -20,6 +20,6 @@ $FontSize_NarrowScreen: 22px;
 
 	@media #{$NarrowScreen}
 	{
-		Font-size: #{FontSize_NarrowScreen};
+		Font-size: #{$FontSize_NarrowScreen};
 	}
 }
