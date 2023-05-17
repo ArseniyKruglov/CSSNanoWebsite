@@ -135,6 +135,66 @@ export const List: Plugin.Interface[] =
 		'ID': 'NormalizeString',
 		'ReadableName': 'Normalize string',
 		'Description': 'Standardises the usage of double or single quoted strings. Can also remove linebreaks which are inserted for aesthetic purposes.',
-		'Tags': [Tags.List[0], Tags.List[2], Tags.List[5]]
+		'Tags': [Tags.List[0], Tags.List[2], Tags.List[4]]
+	},
+	{
+		'ID': 'NormalizeTimingFunctions',
+		'ReadableName': 'Normalize timing functions',
+		'Description': 'Normalizes transition timing in the animation, animation-timing-function, transition and transition-timing-function properties.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'NormalizeUnicode',
+		'ReadableName': 'Normalize unicode',
+		'Description': 'This optimisation can convert unicode-range descriptors to use the shorter wildcard ranges when a particular value meets the wildcard criteria. Values will be converted when the code matches 0 & f in the same place on both sides of the range. So, u+2000-2fff can be converted to u+2???, but u+2100-2fff will be left as it is.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'NormalizeURL',
+		'ReadableName': 'Normalize URL',
+		'Description': 'Normalizes URL strings. It can remove default ports, resolve unnecessary directory traversal & unquote the value.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'NormalizeWhitespace',
+		'ReadableName': 'Normalize whitespace',
+		'Description': 'Trims whitespace inside and around rules, selectors & declarations, plus removes the final semicolon inside every selector.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'OrderedValues',
+		'ReadableName': 'Ordered values',
+		'Description': 'Properties affected by this transform can accept their arguments in an arbitrary order. This module normalizes that order, facilitating easier de-duplication.',
+		'Tags': [Tags.List[2]]
+	},
+	{
+		'ID': 'ReduceIdents',
+		'ReadableName': 'Reduce idents',
+		'Description': 'Renames at-rules such as @keyframes.',
+		'Tags': [Tags.List[3]]
+	},
+	{
+		'ID': 'ReduceInitial',
+		'ReadableName': 'Reduce initial',
+		'Description': 'Replaces the CSS initial keyword with the actual value, when the resulting output is smaller.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'ReduceTransforms',
+		'ReadableName': 'Reduce transforms',
+		'Description': 'Converts between transform functions when there is a shorthand equivalent.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'UniqueSelectors',
+		'ReadableName': 'Unique selectors',
+		'Description': 'Naturally sorts selectors for every rule, and removes duplicates.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'ZIndex',
+		'ReadableName': 'Z-index',
+		'Description': 'Rebases z-index values. This is unsafe as it could potentially clash with other stylesheets, or JavaScript injected styles. However, it is safe if your stacking context has wholly been extracted into CSS.',
+		'Tags': [Tags.List[3]]
 	}
 ]
