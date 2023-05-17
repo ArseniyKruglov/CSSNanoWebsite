@@ -1,0 +1,30 @@
+@import '../../../Fonts/GoogleSans/Style';
+@import '../../../../../../../../Library/Code/Frontend/Source/Colors/Primary';
+@import '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Style';
+@import '../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
+
+
+#Root > Header > H1
+{
+	Color: $Primary;
+	Font-family: #{$Font_GoogleSans};
+	Font-size: 20px;
+	Font-weight: 500;
+	Margin: 0;
+
+	@media (Prefers-color-scheme: Dark)
+	{
+		Color: $Primary_Dark;
+	}
+
+	@media (Prefers-contrast: More)
+	{
+		Color: CanvasText;
+	}
+
+	@media (Monospace)
+	{
+		Color: CanvasText;
+	}
+}

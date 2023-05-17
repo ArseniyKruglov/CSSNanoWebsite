@@ -1,0 +1,16 @@
+@import './Description/Style';
+@import './Name/Style';
+
+
+
+$Gap: 7.5px;
+
+
+
+#Root > Main > UL > * > Div
+{
+	Display: Flex;
+	Flex-direction: Column;
+	Gap: #{$Gap} 0;
+	User-select: Text;
+}

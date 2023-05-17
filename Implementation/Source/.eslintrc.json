@@ -1,0 +1,3 @@
+{
+	"extends": "../../../Library/Tools/ESLint/Source/Config.json"
+}

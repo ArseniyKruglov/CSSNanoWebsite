@@ -1,0 +1,12 @@
+@import '../../../../../Constants';
+@import '../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/CheckboxWithTitle/Style';
+
+
+
+#Root > Main > Div > UL > *
+{
+	& > Span
+	{
+		White-space: Nowrap;
+	}
+}

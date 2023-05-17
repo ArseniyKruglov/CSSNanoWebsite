@@ -1,0 +1,3 @@
+{
+	"extends": "../../../Library/Tools/Stylelint/Source/Config.json"
+}

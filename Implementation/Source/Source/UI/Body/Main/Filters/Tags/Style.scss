@@ -1,0 +1,15 @@
+@import './Tag/Style';
+
+
+
+$Gap: 17.5px;
+
+
+
+#Root > Main > Div > UL
+{
+	Display: Flex;
+	Gap: 0 #{$Gap};
+	Margin: 0;
+	Padding: 0;
+}

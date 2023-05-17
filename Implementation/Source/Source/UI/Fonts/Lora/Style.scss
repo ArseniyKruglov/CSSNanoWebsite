@@ -1,0 +1,14 @@
+@use '../../../../../../../Library/Code/Frontend/Source/FallbackFonts';
+
+
+
+$Font_Lora: 'Lora', FallbackFonts.$Serif;
+
+
+
+@font-face
+{
+	Font-display: Swap;
+	Font-family: 'Lora';
+	Src: URL(./Assets/400_a-Z.,.woff2);
+}

@@ -1,0 +1,21 @@
+@import '../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+@import './Filters/Style';
+@import './Optimizations/Style';
+
+
+
+$Padding: 25px;
+
+
+
+#Root > Main
+{
+	Display: Flex;
+	Flex-direction: Column;
+
+	@media #{$WideScreen}
+	{
+		Gap: #{$Padding} 0;
+		Padding: 0 #{$Padding} #{$Padding};
+	}
+}

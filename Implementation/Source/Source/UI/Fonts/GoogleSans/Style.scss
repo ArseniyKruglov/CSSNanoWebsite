@@ -1,0 +1,22 @@
+@use '../../../../../../../Library/Code/Frontend/Source/FallbackFonts';
+
+
+
+$Font_GoogleSans: 'Google Sans', FallbackFonts.$SansSerif;
+
+
+
+@font-face
+{
+	Font-display: Swap;
+	Font-family: 'Google Sans';
+	Src: URL(./Assets/400_a-Z.woff2);
+}
+
+@font-face
+{
+	Font-display: Swap;
+	Font-family: 'Google Sans';
+	Font-weight: 500;
+	Src: URL(./Assets/500_a-Z.woff2);
+}

@@ -1,0 +1,15 @@
+@import '../../../Constants';
+
+
+
+$FontSize: 28px;
+
+
+
+#Root > Dialog > H1
+{
+	Font-family: #{$Font_Title};
+	Font-size: #{$FontSize};
+	Font-weight: 500;
+	Margin: 0;
+}

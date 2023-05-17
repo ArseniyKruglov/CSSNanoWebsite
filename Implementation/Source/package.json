@@ -1,0 +1,23 @@
+{
+	"private": true,
+	"scripts":
+	{
+		"build": "webpack"
+	},
+	"devDependencies":
+	{
+		"css-loader": "^6.7.3",
+		"eslint": "^8.38.0",
+		"postcss": "^8.4.21",
+		"postcss-scss": "^4.0.6",
+		"resolve-url-loader": "^5.0.0",
+		"sass": "^1.60.0",
+		"sass-loader": "^13.2.0",
+		"stylelint": "^15.4.0",
+		"ts-loader": "^9.4.2",
+		"ts-node": "^10.9.1",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1",
+		"webpack-dev-server": "^4.11.1"
+	}
+}

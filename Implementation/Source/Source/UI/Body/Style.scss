@@ -1,0 +1,17 @@
+@import '../../../../../../Library/Code/Frontend/Source/Elevation';
+@import './Header/Style';
+@import './Main/Style';
+@import './TagExplanation/Style';
+
+
+
+$Elevation: 0;
+
+
+
+#Root
+{
+	@include Elevation($Elevation, 0);
+
+	Margin: 0;
+}

@@ -1,0 +1,27 @@
+@use '../../../../../../../Library/Code/Frontend/Source/Shadows' as Shadows;
+@import '../../Constants';
+@import '../../../../../../../Library/Code/Frontend/Source/Elevation';
+@import '../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+@import './Logo/Style';
+@import './Tabs/Style';
+
+
+
+#Root > Header
+{
+	@media #{$WideScreen}
+	{
+		Align-items: Center;
+		Display: Flex;
+		Justify-content: Space-between;
+		Padding-block: 25px;
+		Padding-inline: #{25px + $BorderRadius * 2};
+	}
+
+	@media #{$NarrowScreen}
+	{
+		Padding-block: 25px;
+		Padding-block-end: 20px;
+		Text-align: Center;
+	}
+}
