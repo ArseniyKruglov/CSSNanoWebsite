@@ -64,5 +64,77 @@ export const List: Plugin.Interface[] =
 		'ReadableName': 'Discard unused',
 		'Description': 'Removes at-rules that do not have any bearing on the CSS file.',
 		'Tags': [Tags.List[3]]
+	},
+	{
+		'ID': 'MergeIdents',
+		'ReadableName': 'Merge idents',
+		'Description': 'This will merge rules together that may have slightly different naming but do the same thing. Note that this is only unsafe if you rely on those animation names in JavaScript.',
+		'Tags': [Tags.List[3]]
+	},
+	{
+		'ID': 'MergeLonghand',
+		'ReadableName': 'Merge longhand',
+		'Description': 'Collapses longhand properties into the shorthand representation, and where possible will also collapse top/right/bottom/left values. Supports margin, padding & border longhands.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'MergeRules',
+		'ReadableName': 'Merge rules',
+		'Description': 'Merges adjacent rules by selectors & overlapping property/value pairs.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'MinifyFontValues',
+		'ReadableName': 'Minify font values',
+		'Description': 'Normalizes font & font-family declarations, and can convert font weight keywords to numeric values.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'MinifyGradients',
+		'ReadableName': 'Minify gradients',
+		'Description': 'Normalizes linear and radial gradient parameters.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'MinifyParams',
+		'ReadableName': 'Minify params',
+		'Description': 'Trims whitespace and normalizes at-rule parameters.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'MinifySelectors',
+		'ReadableName': 'Minify selectors',
+		'Description': 'Removes unnecessary qualified universal selectors, unquotes attribute selectors, trims & normalizes selector strings',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'NormalizeCharset',
+		'ReadableName': 'Normalize charset',
+		'Description': 'Ensures that only a single @charset is present in the CSS file, and moves it to the top of the document. This prevents multiple, invalid declarations occurring through naïve CSS concatenation. Note that by default, new @charset rules will not be added to the CSS.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'NormalizeDisplayValues',
+		'ReadableName': 'Normalize display values',
+		'Description': 'Normalizes the two value syntax for display into the single value syntax where possible.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'NormalizePositions',
+		'ReadableName': 'Normalize positions',
+		'Description': 'Normalizes position values in the background, background-position, -webkit-perspective-origin and perspective-origin properties.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'NormalizeRepeatStyle',
+		'ReadableName': 'Normalize repeat style',
+		'Description': 'Reduces the two value syntax for background-repeat into the single value syntax where possible, in both the property itself and the background shorthand. Also works for mask-repeat.',
+		'Tags': [Tags.List[0]]
+	},
+	{
+		'ID': 'NormalizeString',
+		'ReadableName': 'Normalize string',
+		'Description': 'Standardises the usage of double or single quoted strings. Can also remove linebreaks which are inserted for aesthetic purposes.',
+		'Tags': [Tags.List[0], Tags.List[2], Tags.List[5]]
 	}
 ]
