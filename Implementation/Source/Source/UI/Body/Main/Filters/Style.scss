@@ -30,17 +30,10 @@ $_BorderRadius: $BorderRadius * 2;
 	Overflow-X: Auto;
 	Padding: #{$Padding};
 	Padding-inline-end: #{$Padding + 2.5px};
-	Position: Sticky;
-
-	@media #{$WideScreen}
-	{
-		Top: 25px;
-	}
 
 	@media #{$NarrowScreen}
 	{
 		Margin: 0 10px;
-		Top: 12.5px;
 	}
 
 	@media (Prefers-contrast: More)
