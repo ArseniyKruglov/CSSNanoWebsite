@@ -10,7 +10,6 @@
 {
 	@media #{$WideScreen}
 	{
-		Align-items: Center;
 		Display: Flex;
 		Justify-content: Space-between;
 		Padding-block: 25px;
@@ -19,8 +18,8 @@
 
 	@media #{$NarrowScreen}
 	{
-		Padding-block: 25px;
-		Padding-block-end: 20px;
+		Line-height: 1;
+		Padding: 25px;
 		Text-align: Center;
 	}
 }

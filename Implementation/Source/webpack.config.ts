@@ -8,7 +8,8 @@ export default WebpackConfig.Get
 	'Source':
 	{
 		'Directory': __dirname,
-		'Entry': './Source/Main.ts'
+		'Entry': './Source/Main.ts',
+		'FaviconPath': './Source/Favicon.svg'
 	},
 	'Output':
 	{

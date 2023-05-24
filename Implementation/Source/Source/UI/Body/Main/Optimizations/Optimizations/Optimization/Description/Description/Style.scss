@@ -1,0 +1,25 @@
+@import '../../../../../../../Constants';
+@import '../../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Paragraph/Style';
+@import '../../../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
+
+
+$FontSize_WideScreen: 15.5px;
+$FontSize_NarrowScreen: 14.5px;
+
+
+
+#Root > Main > .Optimizations > UL > * > Div > P
+{
+	Margin-inline-start: 0.5px;
+
+	@media #{$WideScreen}
+	{
+		Font-size: #{$FontSize_WideScreen};
+	}
+
+	@media #{$NarrowScreen}
+	{
+		Font-size: #{$FontSize_NarrowScreen};
+	}
+}

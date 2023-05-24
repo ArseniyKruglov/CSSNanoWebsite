@@ -1,0 +1,13 @@
+@import '../../Constants';
+@import '../../../../../../../Library/Code/Frontend/Source/Elements/Elements/BottomNavigation/Style';
+@import '../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
+
+
+#Root > Nav
+{
+	@media #{$WideScreen}
+	{
+		Display: None;
+	}
+}

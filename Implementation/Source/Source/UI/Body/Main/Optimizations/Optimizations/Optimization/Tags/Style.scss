@@ -1,0 +1,17 @@
+@import './ListItem/Style';
+
+
+
+$Gap: 5px;
+
+
+
+#Root > Main > .Optimizations > UL > * > UL
+{
+	Display: Flex;
+	Flex-wrap: Wrap;
+	Gap: #{$Gap};
+	List-style-type: None;
+	Margin: 0;
+	Padding: 0;
+}

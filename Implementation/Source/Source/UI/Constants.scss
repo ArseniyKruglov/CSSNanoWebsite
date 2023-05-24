@@ -1,10 +1,11 @@
-@import './Fonts/GoogleSans/Style';
+@use './Fonts/GoogleSans/Style' as GoogleSans;
+@use './Fonts/Lora/Style' as Lora;
 
 
 
-$Font_Title: $Font_GoogleSans;
-$Font_UI: $Font_GoogleSans;
-$Font_Text: $Font_GoogleSans;
+$Font_Title: GoogleSans.$Font;
+$Font_UI: GoogleSans.$Font;
+$Font_Text: Lora.$Font;
 
 
 

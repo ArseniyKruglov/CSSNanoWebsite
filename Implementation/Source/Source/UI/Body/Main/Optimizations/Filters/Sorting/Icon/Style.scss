@@ -1,0 +1,12 @@
+@import '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Icon/Style';
+
+
+
+$Size: 20px;
+
+
+
+#Root > Main > .Optimizations > Div > :First-child > Div
+{
+	@include Icon_Size($Size);
+}

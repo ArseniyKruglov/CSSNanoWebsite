@@ -6,7 +6,7 @@ export function Get(): HTMLHeadingElement
 {
 	return HeadingElement.Get
 	({
-		'Level': 1,
-		'Text': 'CSS Nano'
+		'_Level': 1,
+		'_Text': 'CSS Nano'
 	})
 }

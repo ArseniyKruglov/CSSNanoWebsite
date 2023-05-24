@@ -1,22 +1,21 @@
 @import '../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
-@import './Optimization/Style';
+@import './Filters/Style';
+@import './Optimizations/Style';
 
 
 
-$Gap: 10px;
-$MinCardWidth: 400px;
+$Padding: 25px;
 
 
 
-#Root > Main > UL
+#Root > Main > .Optimizations
 {
-	Margin: 0;
-	Padding: 0;
+	Display: Flex;
+	Flex-direction: Column;
 
 	@media #{$WideScreen}
 	{
-		Display: Grid;
-		Gap: #{$Gap};
-		Grid-template-columns: Repeat(Auto-fill, MinMax(#{$MinCardWidth}, 1fr));
+		Gap: #{$Padding} 0;
+		Padding: 0 #{$Padding} #{$Padding};
 	}
 }

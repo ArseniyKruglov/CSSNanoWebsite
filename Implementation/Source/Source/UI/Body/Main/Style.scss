@@ -1,21 +1,13 @@
-@import '../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
-@import './Filters/Style';
-@import './Optimizations/Style';
-
-
-
-$Padding: 25px;
+@import './About/Style';
+@import './Guide/Style';
+@import './SupportUs/Style';
 
 
 
 #Root > Main
 {
-	Display: Flex;
-	Flex-direction: Column;
-
-	@media #{$WideScreen}
+	> :Not(.Selected)
 	{
-		Gap: #{$Padding} 0;
-		Padding: 0 #{$Padding} #{$Padding};
+		Display: None;
 	}
 }

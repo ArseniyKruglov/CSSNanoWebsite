@@ -6,10 +6,10 @@ import * as TabsElement from './Tabs/Script'
 
 export function Get(): HTMLElement
 {
-	return <HTMLElement> BaseElement
+	return <HTMLElement> BaseElement.Create
 	({
-		'HTMLTag': 'Header',
-		'Children':
+		'_HTMLTag': 'Header',
+		'_Children':
 		[
 			LogoElement.Get(),
 			TabsElement.Get()

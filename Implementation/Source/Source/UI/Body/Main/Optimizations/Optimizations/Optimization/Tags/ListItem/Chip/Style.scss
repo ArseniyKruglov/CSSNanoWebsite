@@ -1,0 +1,54 @@
+@use '../../../../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
+@import '../../../../../../../../Constants';
+@import '../../../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Chip/Style';
+
+
+
+$FontSize_WideScreen: 13.5px;
+$FontSize_NarrowScreen: 12.5px;
+$Color_Safe: OKLCH(55% 0.175 155);
+$Color_Unsafe: OKLCH(75% 0.175 80);
+$Color_Compression: OKLCH(55% 0.175 260);
+$Color_SafeInsideOneFile: OKLCH(55% 0.175 200);
+$Color_Configurable: OKLCH(55% 0.175 300);
+
+
+
+#Root > Main > .Optimizations > UL > * > UL > * > *
+{
+	@media #{$WideScreen}
+	{
+		@include Chip_Size($FontSize_WideScreen);
+	}
+
+	@media #{$NarrowScreen}
+	{
+		@include Chip_Size($FontSize_NarrowScreen);
+	}
+
+	&.Safe
+	{
+		@include Chip_Color($Color_Safe);
+	}
+
+	&.Unsafe
+	{
+		@include Chip_Color($Color_Unsafe);
+	}
+
+	&.Compression
+	{
+		@include Chip_Color($Color_Compression);
+	}
+
+	&.SafeInsideOneFile
+	{
+		@include Chip_Color($Color_SafeInsideOneFile);
+	}
+
+	&.Configurable
+	{
+		@include Chip_Color($Color_Configurable);
+	}
+}

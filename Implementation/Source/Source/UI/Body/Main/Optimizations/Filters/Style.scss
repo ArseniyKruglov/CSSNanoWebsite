@@ -1,0 +1,43 @@
+@use '../../../../../../../../../Library/Code/Frontend/Source/Shadows' as Shadows;
+
+@import '../../../../Constants';
+@import '../../../../../../../../../Library/Code/Frontend/Source/Elevation';
+@import '../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+@import '../../../../../../../../../Library/Code/Frontend/Source/Colors/Gray';
+@import './Sorting/Style';
+
+
+
+$Elevation: 3;
+$Margin: 10px;
+$Padding: 20px;
+$Shadow: Shadows.$Medium;
+$_BorderRadius: $BorderRadius * 2;
+
+
+
+#Root > Main > .Optimizations > Div
+{
+	@include Elevation($Elevation, 0);
+
+	Border-radius: #{$_BorderRadius};
+	Box-shadow: #{$Shadow};
+	Display: Flex;
+	Overflow-X: Auto;
+	Padding: #{$Padding};
+
+	@media #{$NarrowScreen}
+	{
+		Margin: 0 #{$Margin};
+	}
+
+	@media (Prefers-contrast: More)
+	{
+		Box-shadow: None;
+	}
+
+	@media (Forced-colors: Active), (Prefers-contrast: More)
+	{
+		Border: 2px Solid CanvasText;
+	}
+}
