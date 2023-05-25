@@ -3,6 +3,7 @@
 @import './BottomNavigation/Style';
 @import './Header/Style';
 @import './Main/Style';
+@import './Selector';
 
 
 
@@ -10,9 +11,17 @@ $Elevation: 0;
 
 
 
-#Root
+#{$Selector}
 {
 	@include Elevation($Elevation, 0);
 
+	Font-size: 16px;
 	Margin: 0;
+	User-select: None;
+	-webkit-tap-highlight-color: Transparent;
+
+	@media (Prefers-color-scheme: Dark)
+	{
+		Color-scheme: Dark;
+	}
 }

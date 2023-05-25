@@ -2,11 +2,15 @@
 @import './Guide/Style';
 @import './SupportUs/Style';
 
+@import './Selector';
 
 
-#Root > Main
+
+#{$Selector}
 {
-	> :Not(.Selected)
+	Font-family: #{$Font_UI};
+
+	& > :Not(.Selected)
 	{
 		Display: None;
 	}

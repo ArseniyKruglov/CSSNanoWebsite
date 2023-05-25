@@ -1,8 +1,12 @@
+@import './Selector';
+
+
+
 $Padding: 30px;
 
 
 
-#Root > Main > .SupportUs
+#{$Selector}
 {
 	Padding: #{$Padding};
 }

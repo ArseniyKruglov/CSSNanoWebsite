@@ -1,11 +1,11 @@
-import * as TabElement from '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Tabs/Script'
+import { Tabs } from '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Tabs/Script'
 import { Data } from '../../../../Main'
 
 
 
 export function Get(): HTMLElement
 {
-	return TabElement.Get
+	return Tabs.Get
 	({
 		'Tabs': Data.Tabs.List.map((Tab) =>
 		({

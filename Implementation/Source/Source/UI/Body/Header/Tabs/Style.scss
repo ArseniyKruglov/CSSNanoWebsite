@@ -1,9 +1,11 @@
 @import '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Tabs/Style';
 @import '../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
+@import './Selector';
 
 
-#Root > Header > Nav
+
+#{$Selector}
 {
 	@media #{$NarrowScreen}
 	{

@@ -1,12 +1,16 @@
 @import '../../Constants';
+
 @import '../../../../../../../Library/Code/Frontend/Source/Elevation';
 @import '../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
 @import './Logo/Style';
 @import './Tabs/Style';
 
+@import './Selector';
 
 
-#Root > Header
+
+#{$Selector}
 {
 	@media #{$WideScreen}
 	{

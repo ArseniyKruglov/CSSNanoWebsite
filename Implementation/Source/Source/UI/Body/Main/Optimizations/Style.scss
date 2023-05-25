@@ -1,6 +1,9 @@
 @import '../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
 @import './Filters/Style';
 @import './Optimizations/Style';
+
+@import './Selector';
 
 
 
@@ -8,7 +11,7 @@ $Padding: 25px;
 
 
 
-#Root > Main > .Optimizations
+#{$Selector}
 {
 	Display: Flex;
 	Flex-direction: Column;
