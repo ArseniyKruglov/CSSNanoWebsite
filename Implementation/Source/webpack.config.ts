@@ -1,15 +1,15 @@
-import * as WebpackConfig from '../../../Library/Tools/Webpack/Source/GetWebpackConfig'
+import * as WebpackConfigGenerator from '../../../Library/Tools/Webpack/Source/GetWebpackConfig'
 
 
 
-export default WebpackConfig.Get
+export default WebpackConfigGenerator.Get
 ({
-	'Mode': WebpackConfig.Enum_Mode.Development,
+	'Mode': WebpackConfigGenerator.Enum_Mode.Development,
 	'Source':
 	{
-		'Directory': __dirname,
+		'RootDirectory': __dirname,
 		'Entry': './Source/Main.ts',
-		'FaviconPath': './Source/Favicon.svg'
+		'Favicon': './Source/Favicon.svg'
 	},
 	'Output':
 	{
@@ -17,15 +17,17 @@ export default WebpackConfig.Get
 		{
 			'Development': '../Webpage/',
 			'Production': '../Webpage/'
-		}
-	},
-	'RootURL':
-	{
-		'Development': '/Implementation/Webpage/',
-		'Production': '/'
+		},
+		'RootURL':
+		{
+			'Development': '/Implementation/Webpage/',
+			'Production': '/'
+		},
 	},
 	'Info':
 	{
-		'AppName': 'CSS Nano'
+		'Name': 'CSS Nano',
+		'Description': 'CSS Nano is a modern, modular compression tool written on top of the PostCSS ecosystem.',
+		'Authors': ['Arseniy Kruglov']
 	}
 })
