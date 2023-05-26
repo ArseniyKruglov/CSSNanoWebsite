@@ -1,10 +1,14 @@
 @use '../../../../../../../../../Library/Code/Frontend/Source/Shadows' as Shadows;
 
 @import '../../../../Constants';
+
 @import '../../../../../../../../../Library/Code/Frontend/Source/Elevation';
 @import '../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 @import '../../../../../../../../../Library/Code/Frontend/Source/Colors/Gray';
+
 @import './Sorting/Style';
+
+@import './Selector';
 
 
 
@@ -16,7 +20,7 @@ $_BorderRadius: $BorderRadius * 2;
 
 
 
-#Root > Main > .Optimizations > Div
+#{$Selector}
 {
 	@include Elevation($Elevation, 0);
 

@@ -1,2 +1,17 @@
 @import './Constants';
 @import './Body/Style';
+
+
+
+HTML
+{
+	Font-size: 16px;
+	Height: 100%;
+	User-select: None;
+	-webkit-tap-highlight-color: Transparent;
+
+	@media (Prefers-color-scheme: Dark)
+	{
+		Color-scheme: Dark;
+	}
+}

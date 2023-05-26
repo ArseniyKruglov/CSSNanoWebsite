@@ -10,6 +10,8 @@
 		"eslint": "^8.38.0",
 		"eslint-plugin-import": "^2.27.5",
 		"postcss": "^8.4.21",
+		"postcss-loader": "^7.3.0",
+		"postcss-nested-ancestors": "^3.0.0",
 		"postcss-scss": "^4.0.6",
 		"resolve-url-loader": "^5.0.0",
 		"sass": "^1.60.0",

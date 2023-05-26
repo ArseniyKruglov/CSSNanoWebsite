@@ -1,5 +1,8 @@
 @import '../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
 @import './Optimization/Style';
+
+@import './Selector';
 
 
 
@@ -8,7 +11,7 @@ $MinCardWidth: 400px;
 
 
 
-#Root > Main > .Optimizations > UL
+#{$Selector}
 {
 	Margin: 0;
 	Padding: 0;

@@ -1,33 +1,34 @@
 import { BaseElement } from '../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import * as AboutElement from './About/Script'
-import * as GuideElement from './Guide/Script'
-import * as SupportUsElement from './SupportUs/Script'
+import { About } from './About/Script'
+import { Guide } from './Guide/Script'
 
 
 
-export function Get(): HTMLElement
+export namespace Main
 {
-	return <HTMLElement> BaseElement.Create
-	({
-		'_HTMLTag': 'Main',
-		'_Modifications': (Element) =>
-		{
-			setTimeout(() =>
+	export function Get(): HTMLElement
+	{
+		return <HTMLElement> BaseElement.Create
+		({
+			'_HTMLTag': 'Main',
+			'_Modifications': (Element) =>
 			{
-				Element.parentElement!.children[0].children[1].addEventListener('SelectionChanged', (Event: CustomEvent) =>
+				setTimeout(() =>
 				{
-					[...Element.children].forEach((Child, Index) =>
+					Element.parentElement!.children[0].children[1].addEventListener('SelectionChanged', (Event: CustomEvent) =>
 					{
-						Child.classList.toggle('Selected', Event.detail.Index === Index)
+						[...Element.children].forEach((Child, Index) =>
+						{
+							Child.classList.toggle('Selected', Event.detail.Index === Index)
+						})
 					})
-				})
-			}, 0)
-		},
-		'_Children':
-		[
-			AboutElement.Get(),
-			GuideElement.Get(),
-			SupportUsElement.Get()
-		]
-	})
+				}, 0)
+			},
+			'_Children':
+			[
+				About.Get(),
+				Guide.Get()
+			]
+		})
+	}
 }

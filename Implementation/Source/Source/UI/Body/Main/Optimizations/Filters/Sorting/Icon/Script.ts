@@ -1,12 +1,12 @@
-import * as IconElement from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Icon/Script'
+import { Icon } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Icon/Script';
 
 
 
-export function Get(): ReturnType<typeof IconElement.Get>
+export function Get(): ReturnType<typeof Icon.Get>
 {
-	return IconElement.Get
+	return Icon.Get
 	({
 		'Name': 'sort',
-		'Style': IconElement.Enum_Style.Outlined
+		'Style': Icon.Enum_Style.Outlined
 	})
 }

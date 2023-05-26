@@ -1,6 +1,6 @@
 import { BaseElement } from '../../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import * as FiltersElement from './Filters/Script'
-import * as OptimizationsElement from './Optimizations/Script'
+import { Filters } from './Filters/Script'
+import { Optimizations } from './Optimizations/Script'
 
 
 
@@ -12,8 +12,8 @@ export function Get(): HTMLElement
 		'_ClassNames': ['Optimizations'],
 		'_Children':
 		[
-			FiltersElement.Get(),
-			OptimizationsElement.Get()
+			Filters.Get(),
+			Optimizations.Get()
 		]
 	})
 }

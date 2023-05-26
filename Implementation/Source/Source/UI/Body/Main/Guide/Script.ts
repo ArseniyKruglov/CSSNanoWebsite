@@ -2,15 +2,18 @@ import { BaseElement } from '../../../../../../../../Library/Code/Frontend/Sourc
 
 
 
-export function Get(): HTMLDivElement
+export namespace Guide
 {
-	return <HTMLDivElement> BaseElement.Create
-	({
-		'_HTMLTag': 'Div',
-		'_ClassNames': ['Guide'],
-		'_Modifications': (Element) =>
-		{
-			(<HTMLDivElement> Element).innerText = 'Guide'
-		}
-	})
+	export function Get(): HTMLDivElement
+	{
+		return <HTMLDivElement> BaseElement.Create
+		({
+			'_HTMLTag': 'Div',
+			'_ClassNames': ['Guide'],
+			'_Modifications': (Element) =>
+			{
+				(<HTMLDivElement> Element).innerText = 'Guide'
+			}
+		})
+	}
 }

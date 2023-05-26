@@ -1,10 +1,10 @@
-import * as IconElement from '../../../../../Library/Code/Frontend/Source/Elements/Elements/Icon/Script'
+import { Icon } from '../../../../../Library/Code/Frontend/Source/Elements/Elements/Icon/Script'
 
 
 
 export type Type_ID = string
 export type Type_ReadableName = string
-export type Type_IconName = IconElement.Type_Name
+export type Type_IconName = Icon.Type_Name
 
 
 

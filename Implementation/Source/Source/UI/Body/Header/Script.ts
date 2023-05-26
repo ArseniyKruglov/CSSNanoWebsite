@@ -4,15 +4,18 @@ import * as TabsElement from './Tabs/Script'
 
 
 
-export function Get(): HTMLElement
+export namespace Header
 {
-	return <HTMLElement> BaseElement.Create
-	({
-		'_HTMLTag': 'Header',
-		'_Children':
-		[
-			LogoElement.Get(),
-			TabsElement.Get()
-		]
-	})
+	export function Get(): HTMLElement
+	{
+		return <HTMLElement> BaseElement.Create
+		({
+			'_HTMLTag': 'Header',
+			'_Children':
+			[
+				LogoElement.Get(),
+				TabsElement.Get()
+			]
+		})
+	}
 }

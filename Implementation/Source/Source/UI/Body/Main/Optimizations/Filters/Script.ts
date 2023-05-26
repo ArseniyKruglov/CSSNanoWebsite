@@ -3,11 +3,14 @@ import * as SortingElement from './Sorting/Script'
 
 
 
-export function Get(): HTMLFormElement
+export namespace Filters
 {
-	return <HTMLFormElement> BaseElement.Create
-	({
-		'_HTMLTag': 'Div',
-		'_Children': [SortingElement.Get()]
-	})
+	export function Get(): HTMLFormElement
+	{
+		return <HTMLFormElement> BaseElement.Create
+		({
+			'_HTMLTag': 'Div',
+			'_Children': [SortingElement.Get()]
+		})
+	}
 }
