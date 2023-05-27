@@ -1,8 +1,6 @@
 import { BaseElement } from '../../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import { Description } from './Description/Script'
-import { GetStarted } from './GetStarted/Script'
-import { Logo } from './Logo/Script'
-import { Slogan } from './Slogan/Script'
+import { Features } from './Features/Script'
+import { FirstSection } from './FirstSection/Script'
 
 
 
@@ -16,10 +14,8 @@ export namespace About
 			'_ClassNames': ['About', 'Selected'],
 			'_Children':
 			[
-				Logo.Get(),
-				Slogan.Get(),
-				Description.Get(),
-				GetStarted.Get()
+				FirstSection.Get(),
+				Features.Get()
 			]
 		})
 	}

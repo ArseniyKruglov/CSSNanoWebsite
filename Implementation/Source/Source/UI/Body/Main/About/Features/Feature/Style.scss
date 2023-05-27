@@ -1,0 +1,30 @@
+@import '../../../../../Constants';
+
+@import '../../../../../../../../../../Library/Code/Frontend/Source/Elevation';
+
+@import './Description/Style';
+@import './Image/Style';
+@import './Title/Style';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Align-items: Center;
+	Border: 1px Solid Gray(75%);
+	Border-radius: #{$BorderRadius};
+	Display: Flex;
+	Flex-basis: 0;
+	Flex-direction: Column;
+	Flex-grow: 1;
+	Padding: 30px;
+
+	@media (Prefers-color-scheme: Dark)
+	{
+		@include Elevation(2, 0);
+
+		Border: None;
+	}
+}

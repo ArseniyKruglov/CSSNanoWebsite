@@ -1,4 +1,4 @@
-import { DecorativeImageWithAlpha } from '../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/DecorativeImageWithAlpha/Script'
+import { DecorativeImageWithAlpha } from '../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/DecorativeImageWithAlpha/Script'
 
 
 

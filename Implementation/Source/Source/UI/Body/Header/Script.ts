@@ -15,7 +15,16 @@ export namespace Header
 			[
 				LogoElement.Get(),
 				TabsElement.Get()
-			]
+			],
+			'_Modifications': (Element) =>
+			{
+				document.addEventListener('scroll', () =>
+				{
+					const Scrolled: boolean = document.documentElement.scrollTop !== 0
+
+					Element.classList.toggle('Scrolled', Scrolled)
+				})
+			}
 		})
 	}
 }

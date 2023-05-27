@@ -9,11 +9,7 @@ export namespace Guide
 		return <HTMLDivElement> BaseElement.Create
 		({
 			'_HTMLTag': 'Div',
-			'_ClassNames': ['Guide'],
-			'_Modifications': (Element) =>
-			{
-				(<HTMLDivElement> Element).innerText = 'Guide'
-			}
+			'_ClassNames': ['Guide']
 		})
 	}
 }

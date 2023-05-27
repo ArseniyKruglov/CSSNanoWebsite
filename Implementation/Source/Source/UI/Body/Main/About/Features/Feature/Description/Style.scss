@@ -1,0 +1,16 @@
+@import '../../../../../../Constants';
+
+@import '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Paragraph/Style';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Font-family: #{$Font_Text};
+	Margin: 0;
+	Text-align: Center;
+	Text-wrap: Balance;
+	User-select: Text;
+}

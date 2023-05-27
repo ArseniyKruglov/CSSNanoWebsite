@@ -1,23 +1,11 @@
-@import './Description/Style';
-@import './GetStarted/Style';
-@import './Logo/Style';
-@import './Slogan/Style';
+@import './Features/Style';
+@import './FirstSection/Style';
 
 @import './Selector';
 
 
 
-$Padding: 30px;
-
-
-
 #{$Selector}
 {
-	Align-items: Center;
-	Box-sizing: Border-box;
-	Display: Flex;
-	Flex-direction: Column;
-	Height: 100%;
-	Justify-content: Center;
-	Padding: #{$Padding};
+
 }

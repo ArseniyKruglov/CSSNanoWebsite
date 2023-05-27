@@ -1,3 +1,5 @@
+@import '../../Constants';
+
 @import '../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
 @import './About/Style';
@@ -9,12 +11,11 @@
 
 #{$Selector}
 {
-	Flex-grow: 1;
 	Font-family: #{$Font_UI};
 
-	@media #{$NarrowScreen}
+	@media #{$WideScreen}
 	{
-		Margin-block-end: 65px;
+		Margin-block-start: 75px;
 	}
 
 	& > :Not(.Selected)

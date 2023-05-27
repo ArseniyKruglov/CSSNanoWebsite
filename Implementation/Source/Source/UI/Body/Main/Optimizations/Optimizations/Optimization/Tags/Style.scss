@@ -1,12 +1,14 @@
 @import './ListItem/Style';
 
+@import './Selector';
+
 
 
 $Gap: 5px;
 
 
 
-#Root > Main > .Optimizations > UL > * > UL
+#{$Selector}
 {
 	Display: Flex;
 	Flex-wrap: Wrap;

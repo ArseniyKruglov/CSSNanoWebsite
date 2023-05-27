@@ -1,0 +1,18 @@
+@import '../../../../../../Constants';
+
+@import '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Style';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Font-family: #{$Font_Title};
+	Font-size: 24px;
+	Font-weight: 400;
+	Margin-block-end: 10px;
+	Margin-block-start: 35px;
+	Text-align: Center;
+	User-select: Text;
+}

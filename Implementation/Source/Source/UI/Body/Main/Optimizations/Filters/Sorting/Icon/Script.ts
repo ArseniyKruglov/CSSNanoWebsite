@@ -6,7 +6,7 @@ export function Get(): ReturnType<typeof Icon.Get>
 {
 	return Icon.Get
 	({
-		'Name': 'sort',
-		'Style': Icon.Enum_Style.Outlined
+		'_Name': 'sort',
+		'_Style': Icon.Enum_Style.Outlined
 	})
 }

@@ -1,3 +1,5 @@
+@use '../../../../../../../Library/Code/Frontend/Source/Shadows' as Shadows;
+
 @import '../../Constants';
 
 @import '../../../../../../../Library/Code/Frontend/Source/Elevation';
@@ -14,10 +16,22 @@
 {
 	@media #{$WideScreen}
 	{
+		Box-sizing: Border-box;
 		Display: Flex;
 		Justify-content: Space-between;
 		Padding-block: 25px;
 		Padding-inline: #{25px + $BorderRadius * 2};
+		Position: Fixed;
+		Top: 0;
+		Transition: Box-shadow 250ms, Background-color 250ms;
+		Width: 100%;
+
+		&.Scrolled
+		{
+			@include Elevation(2, 0);
+
+			Box-shadow: Shadows.$Low;
+		}
 	}
 
 	@media #{$NarrowScreen}

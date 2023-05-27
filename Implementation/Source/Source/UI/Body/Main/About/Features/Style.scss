@@ -1,0 +1,29 @@
+@import '../../../../Constants';
+
+@import '../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
+@import './Feature/Style';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	@media #{$WideScreen}
+	{
+		Display: Flex;
+		Flex-wrap: Wrap;
+		Gap: 15px;
+		Padding-block-end: 50px;
+		Padding-inline: 50px;
+	}
+
+	@media #{$NarrowScreen}
+	{
+		Display: Flex;
+		Flex-direction: Column;
+		Gap: 10px;
+		Padding-inline: 15px;
+	}
+}

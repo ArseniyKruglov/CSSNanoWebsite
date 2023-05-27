@@ -1,10 +1,10 @@
-import * as SelectElement from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Select/Script'
+import { Select } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Select/Script'
 
 
 
-export function Get(): ReturnType<typeof SelectElement.Get>
+export function Get(): ReturnType<typeof Select.Get>
 {
-	return SelectElement.Get
+	return Select.Get
 	({
 		'Options':
 		[

@@ -1,8 +1,11 @@
-@use '../../../../../../Library/Code/Frontend/Source/Elevation';
+@import '../Constants';
+
+@import '../../../../../../Library/Code/Frontend/Source/Elevation';
 
 @import './BottomNavigation/Style';
 @import './Header/Style';
 @import './Main/Style';
+
 @import './Selector';
 
 
@@ -15,8 +18,5 @@ $Elevation: 0;
 {
 	@include Elevation($Elevation, 0);
 
-	Display: Flex;
-	Flex-direction: Column;
-	Height: 100%;
 	Margin: 0;
 }

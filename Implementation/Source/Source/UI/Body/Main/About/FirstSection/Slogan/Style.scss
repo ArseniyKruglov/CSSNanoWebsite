@@ -1,0 +1,27 @@
+@import '../../../../../Constants';
+
+@import '../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Style';
+@import '../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Font-family: #{$Font_Title};
+	Font-weight: 500;
+	Margin: 0;
+	Text-align: Center;
+	User-select: Text;
+
+	@media #{$WideScreen}
+	{
+		Font-size: 36px;
+	}
+
+	@media #{$NarrowScreen}
+	{
+		Font-size: 24px;
+	}
+}

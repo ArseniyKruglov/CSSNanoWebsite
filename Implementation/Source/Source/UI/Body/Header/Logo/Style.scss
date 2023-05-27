@@ -2,7 +2,6 @@
 
 @import '../../../../../../../../Library/Code/Frontend/Source/Colors/Primary';
 @import '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Style';
-@import '../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
 @import './Selector';
 
@@ -26,7 +25,7 @@
 		Color: CanvasText;
 	}
 
-	@media (Monospace)
+	@media (Monochrome)
 	{
 		Color: CanvasText;
 	}
