@@ -17,6 +17,6 @@ export const List: Tab.Interface[] =
 	{
 		'ID': 'Optimizations',
 		'ReadableName': 'Optimizations',
-		'IconName': 'format_list_bulleted'
+		'IconName': 'receipt_long'
 	}
 ]
