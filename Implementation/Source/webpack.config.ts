@@ -1,4 +1,4 @@
-import * as WebpackConfigGenerator from '../../../Library/Tools/Webpack/Source/GetWebpackConfig'
+import { WebpackConfigGenerator } from '../../../Library/Tools/Webpack/Source/GetWebpackConfig'
 
 
 
