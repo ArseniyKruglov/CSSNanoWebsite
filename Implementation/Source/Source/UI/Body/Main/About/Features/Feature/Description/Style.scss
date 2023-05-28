@@ -8,6 +8,9 @@
 
 #{$Selector}
 {
+	Align-items: Center;
+	Display: Flex;
+	Flex-grow: 1;
 	Font-family: #{$Font_Text};
 	Margin: 0;
 	Text-align: Center;

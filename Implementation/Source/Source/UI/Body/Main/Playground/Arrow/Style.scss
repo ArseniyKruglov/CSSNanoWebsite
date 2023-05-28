@@ -1,8 +1,7 @@
 @import '../../../../Constants';
 
+@import '../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Icon/Style';
 @import '../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
-
-@import './Feature/Style';
 
 @import './Selector';
 
@@ -10,15 +9,15 @@
 
 #{$Selector}
 {
-	Margin: 0;
-	Padding: 0;
-
 	@media #{$WideScreen}
 	{
-		Display: Flex;
-		Flex-wrap: Wrap;
-		Gap: 15px;
-		Padding-block-end: 50px;
-		Padding-inline: 50px;
+		@include Icon_Size(48px);
+	}
+
+	@media #{$NarrowScreen}
+	{
+		@include Icon_Size(42px);
+
+		Rotate: 90deg;
 	}
 }

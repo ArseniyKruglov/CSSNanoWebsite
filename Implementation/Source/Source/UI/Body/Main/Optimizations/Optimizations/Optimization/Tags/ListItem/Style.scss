@@ -1,8 +1,10 @@
 @import './Chip/Style';
 
+@import './Selector';
 
 
-#Root > Main > .Optimizations > UL > * > UL > *
+
+#{$Selector}
 {
 
 }

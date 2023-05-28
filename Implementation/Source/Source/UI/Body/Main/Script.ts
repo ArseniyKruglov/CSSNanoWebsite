@@ -1,6 +1,7 @@
 import { BaseElement } from '../../../../../../../Library/Code/Frontend/Source/BaseElement'
 import { About } from './About/Script'
-import { Guide } from './Guide/Script'
+import { Optimizations } from './Optimizations/Script'
+import { Playground } from './Playground/Script'
 
 
 
@@ -27,7 +28,8 @@ export namespace Main
 			'_Children':
 			[
 				About.Get(),
-				Guide.Get()
+				Optimizations.Get(),
+				Playground.Get()
 			]
 		})
 	}

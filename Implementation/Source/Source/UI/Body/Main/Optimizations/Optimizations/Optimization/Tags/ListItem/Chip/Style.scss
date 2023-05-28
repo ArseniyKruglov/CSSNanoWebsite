@@ -1,8 +1,9 @@
-@use '../../../../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
-
 @import '../../../../../../../../Constants';
 
 @import '../../../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Chip/Style';
+@import '../../../../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
+@import './Selector';
 
 
 
@@ -16,7 +17,7 @@ $Color_Configurable: OKLCH(55% 0.175 300);
 
 
 
-#Root > Main > .Optimizations > UL > * > UL > * > *
+#{$Selector}
 {
 	@media #{$WideScreen}
 	{

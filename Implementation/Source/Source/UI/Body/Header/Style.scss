@@ -16,21 +16,38 @@
 {
 	@media #{$WideScreen}
 	{
+		@include Elevation(0, 0);
+
 		Box-sizing: Border-box;
 		Display: Flex;
 		Justify-content: Space-between;
-		Padding-block: 25px;
+		Padding-block: 20px;
 		Padding-inline: #{25px + $BorderRadius * 2};
 		Position: Fixed;
 		Top: 0;
 		Transition: Box-shadow 250ms, Background-color 250ms;
 		Width: 100%;
 
+		@media (Prefers-reduced-motion: Reduce)
+		{
+			Transition: None;
+		}
+
 		&.Scrolled
 		{
 			@include Elevation(2, 0);
 
 			Box-shadow: Shadows.$Low;
+
+			@media (Prefers-contrast: More)
+			{
+				Box-shadow: None;
+			}
+
+			@media (Forced-colors: Active), (Prefers-contrast: More)
+			{
+				Border-block-end: 2px Solid CanvasText;
+			}
 		}
 	}
 

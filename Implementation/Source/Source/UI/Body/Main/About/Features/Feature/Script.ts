@@ -24,7 +24,7 @@ export namespace Feature
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'_HTMLTag': 'Div',
+			'_HTMLTag': 'LI',
 			'_Children':
 			[
 				Image.Get(Argument.Image),

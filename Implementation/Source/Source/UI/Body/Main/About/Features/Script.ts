@@ -9,7 +9,7 @@ export namespace Features
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'_HTMLTag': 'Div',
+			'_HTMLTag': 'UL',
 			'_ClassNames': ['Featuers'],
 			'_Children':
 			[
@@ -20,8 +20,8 @@ export namespace Features
 						'Source': 'https://cssnano.co/img/postcss.svg',
 						'Dimensions':
 						{
-							'Width': 200,
-							'Height': 200
+							'Width': 79,
+							'Height': 78
 						}
 					},
 					'Title':
@@ -37,8 +37,8 @@ export namespace Features
 						'Source': 'https://cssnano.co/img/undraw_settings.svg',
 						'Dimensions':
 						{
-							'Width': 248,
-							'Height': 200
+							'Width': 997,
+							'Height': 804
 						}
 					},
 					'Title':
@@ -54,8 +54,8 @@ export namespace Features
 						'Source': 'https://cssnano.co/img/undraw_config.svg',
 						'Dimensions':
 						{
-							'Width': 244,
-							'Height': 200
+							'Width': 970,
+							'Height': 796
 						}
 					},
 					'Title':

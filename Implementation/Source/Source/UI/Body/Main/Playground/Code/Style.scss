@@ -1,0 +1,20 @@
+@import '../../../../Constants';
+
+@import '../../../../../../../../../Library/Code/Frontend/Source/Colors/Gray';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Border: 1px Solid #{Gray(75%)};
+	Border-radius: #{$BorderRadius * 2};
+	Font-family: 'Space Mono';
+	Font-size: 14px;
+	Overflow: Auto;
+	Padding: 28px;
+	User-select: Text;
+	White-space: Pre;
+	text-wrap: wrap;
+}

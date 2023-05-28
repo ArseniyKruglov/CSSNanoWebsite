@@ -1,6 +1,7 @@
 @import '../../../../../Constants';
 
 @import '../../../../../../../../../../Library/Code/Frontend/Source/Elevation';
+@import '../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
 @import './Description/Style';
 @import './Image/Style';
@@ -13,18 +14,44 @@
 #{$Selector}
 {
 	Align-items: Center;
-	Border: 1px Solid Gray(75%);
-	Border-radius: #{$BorderRadius};
 	Display: Flex;
-	Flex-basis: 0;
 	Flex-direction: Column;
-	Flex-grow: 1;
-	Padding: 30px;
 
-	@media (Prefers-color-scheme: Dark)
+	@media #{$WideScreen}
 	{
-		@include Elevation(2, 0);
+		Border: 1px Solid #{Gray(75%)};
+		Border-radius: #{$BorderRadius};
+		Flex-basis: 0;
+		Flex-grow: 1;
+		Padding: 30px;
 
-		Border: None;
+		@media (Prefers-color-scheme: Dark)
+		{
+			@include Elevation(2, 0);
+
+			Border: None;
+		}
+
+		@media (Prefers-contrast: More)
+		{
+			Border-color: CanvasText;
+		}
+	}
+
+	@media #{$NarrowScreen}
+	{
+		Border-block-start: 1px Solid #{Gray(75%)};
+		Padding-block: 50px;
+		Padding-inline: 25px;
+
+		@media (Prefers-color-scheme: Dark)
+		{
+			Border-color: #{Gray(25%)};
+		}
+
+		@media (Prefers-contrast: More)
+		{
+			Border-color: CanvasText;
+		}
 	}
 }

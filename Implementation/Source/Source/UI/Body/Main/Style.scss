@@ -3,7 +3,8 @@
 @import '../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
 @import './About/Style';
-@import './Guide/Style';
+@import './Optimizations/Style';
+@import './Playground/Style';
 
 @import './Selector';
 
@@ -15,11 +16,16 @@
 
 	@media #{$WideScreen}
 	{
-		Margin-block-start: 75px;
+		Margin-block-start: 65px;
+	}
+
+	@media #{$NarrowScreen}
+	{
+		Margin-block-end: 65px;
 	}
 
 	& > :Not(.Selected)
 	{
-		Display: None;
+		Display: None !important;
 	}
 }

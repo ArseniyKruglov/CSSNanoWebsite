@@ -1,5 +1,7 @@
 import { BaseElement } from '../../../../../../../../../Library/Code/Frontend/Source/BaseElement'
+import * as Plugins from '../../../../../Data/Plugins'
 import { Entities } from '../../../../../Main'
+import { Optimization } from './Optimization/Script'
 
 
 
@@ -35,8 +37,8 @@ export namespace Optimizations
 	{
 		return <HTMLElement> BaseElement.Create
 		({
-			'_HTMLTag': 'UL'
-			// '_Children': (SortingType.Function)(Data.Plugins.List).map((Plugin) => OptimizationElement.Get(Plugin))
+			'_HTMLTag': 'UL',
+			'_Children': (SortingType.Function)(Plugins.List).map((Plugin) => Optimization.Get(Plugin))
 		})
 	}
 }

@@ -10,13 +10,13 @@ export const List: Tab.Interface[] =
 		'IconName': 'auto_awesome'
 	},
 	{
-		'ID': 'Guide',
-		'ReadableName': 'How to use',
-		'IconName': 'menu_book'
-	},
-	{
 		'ID': 'Optimizations',
 		'ReadableName': 'Optimizations',
 		'IconName': 'receipt_long'
+	},
+	{
+		'ID': 'Playground',
+		'ReadableName': 'Playground',
+		'IconName': 'code'
 	}
 ]

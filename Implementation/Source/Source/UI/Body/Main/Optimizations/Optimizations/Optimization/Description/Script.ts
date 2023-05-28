@@ -1,19 +1,19 @@
 import { BaseElement } from '../../../../../../../../../../../Library/Code/Frontend/Source/BaseElement'
+import { Paragraph } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Paragraph/Script'
 import { Entities } from '../../../../../../../Main'
-import * as Description from './Description/Script'
-import * as Name from './Name/Script'
 
 
 
-export function Get(Plugin: Entities.Plugin.Interface): HTMLDivElement
+export namespace Description
 {
-	return <HTMLDivElement> BaseElement.Create
-	({
-		'_HTMLTag': 'Div',
-		'_Children':
-		[
-			Name.Get(Plugin),
-			Description.Get(Plugin)
-		]
-	})
+	export function Get(Plugin: Entities.Plugin.Interface): HTMLParagraphElement
+	{
+		return <HTMLParagraphElement> BaseElement.Create
+		({
+			'_Element': Paragraph.Get
+			({
+				'_Text': Plugin.Description
+			})
+		})
+	}
 }
