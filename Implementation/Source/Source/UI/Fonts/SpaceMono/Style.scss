@@ -1,0 +1,14 @@
+@use '../../../../../../../Library/Code/Frontend/Source/FallbackFonts' as FallbackFonts;
+
+
+
+$Font: 'Space Mono', FallbackFonts.$Monospace;
+
+
+
+@font-face
+{
+	Font-display: Swap;
+	Font-family: 'Space Mono';
+	Src: URL(./Assets/400.ttf);
+}
