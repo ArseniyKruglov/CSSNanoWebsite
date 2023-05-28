@@ -10,7 +10,7 @@ $Font: 'Google Sans', FallbackFonts.$SansSerif;
 {
 	Font-display: Swap;
 	Font-family: 'Google Sans';
-	Src: URL(./Assets/400_a-Z.woff2);
+	Src: URL(./Assets/400.ttf);
 }
 
 @font-face
@@ -18,5 +18,5 @@ $Font: 'Google Sans', FallbackFonts.$SansSerif;
 	Font-display: Swap;
 	Font-family: 'Google Sans';
 	Font-weight: 500;
-	Src: URL(./Assets/500_a-Z.woff2);
+	Src: URL(./Assets/500.ttf);
 }
