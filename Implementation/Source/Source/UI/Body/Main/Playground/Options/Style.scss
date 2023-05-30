@@ -1,0 +1,24 @@
+@use '../../../../../../../../../Library/Code/Frontend/Source/Shadows' as Shadows;
+
+@import '../../../../../../../../../Library/Code/Frontend/Source/Elevation';
+
+@import './Preset/Style';
+
+@import './Selector';
+
+
+
+$Elevation: 3;
+$Padding: 20px;
+$Shadow: Shadows.$Medium;
+
+
+
+#{$Selector}
+{
+	@include Elevation($Elevation, 0);
+
+	Border-radius: #{$BorderRadius * 2};
+	Box-shadow: #{$Shadow};
+	Padding: #{$Padding};
+}

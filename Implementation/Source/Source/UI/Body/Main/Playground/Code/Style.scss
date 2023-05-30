@@ -1,6 +1,5 @@
-@import '../../../../Constants';
-
-@import '../../../../../../../../../Library/Code/Frontend/Source/Colors/Gray';
+@import './Arrow/Style';
+@import './Code/Style';
 
 @import './Selector';
 
@@ -8,13 +7,20 @@
 
 #{$Selector}
 {
-	Border: 1px Solid #{Gray(75%)};
-	Border-radius: #{$BorderRadius * 2};
-	Font-family: 'Space Mono';
-	Font-size: 14px;
-	Overflow: Auto;
-	Padding: 28px;
-	User-select: Text;
-	White-space: Pre;
-	text-wrap: wrap;
+	Gap: 35px;
+	Margin-block-start: 35px;
+
+	@media (Width >= 1000px)
+	{
+		Align-items: Center;
+		Display: Grid;
+		Grid-template-columns: 1fr Auto 1fr;
+	}
+
+	@media (Width < 1000px)
+	{
+		Align-items: Center;
+		Display: Flex;
+		Flex-direction: Column;
+	}
 }

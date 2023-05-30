@@ -1,12 +1,15 @@
-import { Icon } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Icon/Script';
+import { LibraryElement_Icon } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Icon/Script';
 
 
 
-export function Get(): ReturnType<typeof Icon.Get>
+export namespace Element_Icon
 {
-	return Icon.Get
-	({
-		'_Name': 'sort',
-		'_Style': Icon.Enum_Style.Outlined
-	})
+	export function Get(): ReturnType<typeof LibraryElement_Icon.Get>
+	{
+		return LibraryElement_Icon.Get
+		(
+			'sort',
+			LibraryElement_Icon.Enum_Style.Outlined
+		)
+	}
 }

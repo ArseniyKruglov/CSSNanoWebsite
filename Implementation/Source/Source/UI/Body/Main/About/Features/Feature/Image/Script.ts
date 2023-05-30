@@ -2,7 +2,7 @@ import { DecorativeImageWithAlpha } from '../../../../../../../../../../../Libra
 
 
 
-export namespace Image
+export namespace LibraryElement_Image
 {
 	export interface Interface extends DecorativeImageWithAlpha.Interface
 	{

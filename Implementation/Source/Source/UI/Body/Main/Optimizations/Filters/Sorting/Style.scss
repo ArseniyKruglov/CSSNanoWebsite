@@ -3,9 +3,11 @@
 @import './Icon/Style';
 @import './Select/Style';
 
+@import './Selector';
 
 
-#Root > Main > .Optimizations > Div > :First-child
+
+#{$Selector}
 {
 
 }

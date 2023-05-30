@@ -4,7 +4,6 @@
 
 @import '../../../../../../../../../Library/Code/Frontend/Source/Elevation';
 @import '../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
-@import '../../../../../../../../../Library/Code/Frontend/Source/Colors/Gray';
 
 @import './Sorting/Style';
 
@@ -16,7 +15,6 @@ $Elevation: 3;
 $Margin: 10px;
 $Padding: 20px;
 $Shadow: Shadows.$Medium;
-$_BorderRadius: $BorderRadius * 2;
 
 
 
@@ -24,10 +22,8 @@ $_BorderRadius: $BorderRadius * 2;
 {
 	@include Elevation($Elevation, 0);
 
-	Border-radius: #{$_BorderRadius};
+	Border-radius: #{$BorderRadius * 2};
 	Box-shadow: #{$Shadow};
-	Display: Flex;
-	Overflow-X: Auto;
 	Padding: #{$Padding};
 
 	@media #{$NarrowScreen}

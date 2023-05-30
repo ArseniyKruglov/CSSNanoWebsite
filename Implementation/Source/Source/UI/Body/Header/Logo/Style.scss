@@ -9,7 +9,7 @@
 
 #{$Selector}
 {
-	Color: $Primary;
+	Color: #{$Primary};
 	Font-family: #{GoogleSans.$Font};
 	Font-size: 20px;
 	Font-weight: 500;
@@ -17,7 +17,7 @@
 
 	@media (Prefers-color-scheme: Dark)
 	{
-		Color: $Primary_Dark;
+		Color: #{$Primary_Dark};
 	}
 
 	@media (Prefers-contrast: More)

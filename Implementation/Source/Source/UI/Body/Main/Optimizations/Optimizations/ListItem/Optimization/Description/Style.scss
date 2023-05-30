@@ -1,0 +1,31 @@
+@import '../../../../../../../Constants';
+
+@import '../../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Paragraph/Style';
+@import '../../../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
+@import './Selector';
+
+
+
+$FontSize_WideScreen: 15.5px;
+$FontSize_NarrowScreen: 14.5px;
+
+
+
+#{$Selector}
+{
+	Font-family: #{$Font_Text};
+	Margin-block: 0 17.5px;
+	Margin-inline-start: 0.5px;
+	User-select: Text;
+
+	@media #{$WideScreen}
+	{
+		Font-size: #{$FontSize_WideScreen};
+	}
+
+	@media #{$NarrowScreen}
+	{
+		Font-size: #{$FontSize_NarrowScreen};
+	}
+}

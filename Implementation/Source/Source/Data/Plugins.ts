@@ -110,7 +110,7 @@ export const List: Plugin.Interface[] =
 	{
 		'ID': 'NormalizeCharset',
 		'ReadableName': 'Normalize charset',
-		'Description': 'Ensures that only a single @charset is present in the CSS file, and moves it to the top of the document. This prevents multiple, invalid declarations occurring through naïve CSS concatenation. Note that by default, new @charset rules will not be added to the CSS.',
+		'Description': 'Ensures that only a single @charset is present in the CSS file, and moves it to the top of the document.',
 		'Tags': [Tags.List[0]]
 	},
 	{
@@ -146,7 +146,7 @@ export const List: Plugin.Interface[] =
 	{
 		'ID': 'NormalizeUnicode',
 		'ReadableName': 'Normalize unicode',
-		'Description': 'This optimisation can convert unicode-range descriptors to use the shorter wildcard ranges when a particular value meets the wildcard criteria. Values will be converted when the code matches 0 & f in the same place on both sides of the range. So, u+2000-2fff can be converted to u+2???, but u+2100-2fff will be left as it is.',
+		'Description': 'This optimisation can convert unicode-range descriptors to use the shorter wildcard ranges when a particular value meets the wildcard criteria.',
 		'Tags': [Tags.List[0]]
 	},
 	{

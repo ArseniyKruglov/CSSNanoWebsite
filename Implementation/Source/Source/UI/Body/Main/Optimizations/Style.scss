@@ -9,18 +9,10 @@
 
 
 
-$Padding: 25px;
-
-
-
 #{$Selector}
 {
-	Display: Flex;
-	Flex-direction: Column;
-
 	@media #{$WideScreen}
 	{
-		Gap: #{$Padding} 0;
 		Padding-block-end: #{$Padding};
 		Padding-block-start: 15px;
 		Padding-inline: #{$Padding};

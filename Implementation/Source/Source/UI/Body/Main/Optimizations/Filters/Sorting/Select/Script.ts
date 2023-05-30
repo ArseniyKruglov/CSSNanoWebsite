@@ -1,19 +1,15 @@
-import { Select } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Select/Script'
+import { LibraryElement_Select } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Select/Script'
 
 
 
-export function Get(): ReturnType<typeof Select.Get>
+export namespace Element_Select
 {
-	return Select.Get
-	({
-		'Options':
-		[
-			{
-				'_Text': 'Alpabetical'
-			},
-			{
-				'_Text': 'Tags'
-			}
-		]
-	})
+	export function Get(): ReturnType<typeof LibraryElement_Select.Get>
+	{
+		return LibraryElement_Select.Get
+		([
+			{ 'Text': 'Alpabetical' },
+			{ 'Text': 'Tags' }
+		])
+	}
 }

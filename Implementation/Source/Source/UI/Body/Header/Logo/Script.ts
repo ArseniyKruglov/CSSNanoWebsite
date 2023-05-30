@@ -2,11 +2,14 @@ import { Heading } from '../../../../../../../../Library/Code/Frontend/Source/El
 
 
 
-export function Get(): HTMLHeadingElement
+export namespace Element_Logo
 {
-	return Heading.Get
-	({
-		'_Level': 1,
-		'_Text': 'CSS Nano'
-	})
+	export function Get(): HTMLHeadingElement
+	{
+		return Heading.Get
+		({
+			'Text': 'CSS Nano',
+			'Level': 1
+		})
+	}
 }

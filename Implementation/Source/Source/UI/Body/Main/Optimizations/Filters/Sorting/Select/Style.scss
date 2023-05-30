@@ -1,12 +1,14 @@
 @import '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Select/Style';
 
+@import './Selector';
+
 
 
 $FontSize: 15.5px;
 
 
 
-#Root > Main > .Optimizations > Div > :First-child > Select
+#{$Selector}
 {
 	@include Select_FontSize($FontSize);
 }

@@ -2,8 +2,8 @@
 
 @import '../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
-@import './Arrow/Style';
 @import './Code/Style';
+@import './Options/Style';
 
 @import './Selector';
 
@@ -11,21 +11,14 @@
 
 #{$Selector}
 {
-	Gap: 35px;
-
 	@media #{$WideScreen}
 	{
-		Align-items: Center;
-		Display: Grid;
-		Grid-template-columns: 1fr Auto 1fr;
-		Padding: 35px;
+		Padding-block: 15px 25px;
+		Padding-inline: 25px;
 	}
 
 	@media #{$NarrowScreen}
 	{
-		Align-items: Center;
-		Display: Flex;
-		Flex-direction: Column;
 		Padding: 10px;
 	}
 }

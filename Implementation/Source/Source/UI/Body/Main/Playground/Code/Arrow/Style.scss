@@ -1,0 +1,23 @@
+@import '../../../../../Constants';
+
+@import '../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Icon/Style';
+@import '../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	@media (Width >= 1000px)
+	{
+		@include Icon_Size(48px);
+	}
+
+	@media (Width < 1000px)
+	{
+		@include Icon_Size(42px);
+
+		Rotate: 90deg;
+	}
+}

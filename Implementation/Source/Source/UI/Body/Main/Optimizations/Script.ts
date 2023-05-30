@@ -1,20 +1,20 @@
 import { BaseElement } from '../../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import { Filters } from './Filters/Script'
-import { Optimizations as OptimizationsChild } from './Optimizations/Script'
+import { Element_Filters } from './Filters/Script'
+import { Plugins as OptimizationsChild } from './Optimizations/Script'
 
 
 
-export namespace Optimizations
+export namespace Element_Plugins
 {
-	export function Get(): HTMLElement
+	export function Get(): HTMLDivElement
 	{
-		return <HTMLElement> BaseElement.Create
+		return <HTMLDivElement> BaseElement.Create
 		({
-			'_HTMLTag': 'Div',
-			'_ClassNames': ['Optimizations'],
-			'_Children':
+			'HTMLTag': 'Div',
+			'Classes': ['Optimizations'],
+			'Children':
 			[
-				Filters.Get(),
+				Element_Filters.Get(),
 				OptimizationsChild.Get()
 			]
 		})

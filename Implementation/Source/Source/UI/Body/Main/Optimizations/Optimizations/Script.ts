@@ -1,11 +1,11 @@
 import { BaseElement } from '../../../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import * as Plugins from '../../../../../Data/Plugins'
+import * as PluginsData from '../../../../../Data/Plugins'
 import { Entities } from '../../../../../Main'
-import { Optimization } from './Optimization/Script'
+import { Element_ListItem } from './ListItem/Script'
 
 
 
-export namespace Optimizations
+export namespace Plugins
 {
 	export type Type_SortingTypeReadableName = string
 
@@ -33,12 +33,12 @@ export namespace Optimizations
 
 
 
-	export function Get(SortingType: Interface_SortingType = SortingTypes[0]): HTMLElement
+	export function Get(SortingType: Interface_SortingType = SortingTypes[0]): HTMLUListElement
 	{
-		return <HTMLElement> BaseElement.Create
+		return <HTMLUListElement> BaseElement.Create
 		({
-			'_HTMLTag': 'UL',
-			'_Children': (SortingType.Function)(Plugins.List).map((Plugin) => Optimization.Get(Plugin))
+			'HTMLTag': 'UL',
+			'Children': (SortingType.Function)(PluginsData.List).map((Plugin) => Element_ListItem.Get(Plugin))
 		})
 	}
 }

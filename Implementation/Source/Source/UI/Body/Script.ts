@@ -1,16 +1,20 @@
-import { BottomNavigation } from './BottomNavigation/Script'
-import { Header } from './Header/Script'
-import { Main } from './Main/Script'
+import { Element_BottomNavigation } from './BottomNavigation/Script'
+import { Element_Header } from './Header/Script'
+import { Element_Main } from './Main/Script'
 
 
 
-export function Draw(): void
+export namespace Body
 {
-	document.body.id = 'Root'
-	document.body.append
-	(
-		Header.Get(),
-		Main.Get(),
-		BottomNavigation.Get()
-	)
+	export function Draw(): void
+	{
+		document.body.id = 'Root'
+
+		document.body.append
+		(
+			Element_Header.Get(),
+			Element_Main.Get(),
+			Element_BottomNavigation.Get()
+		)
+	}
 }

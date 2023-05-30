@@ -18,10 +18,11 @@
 	{
 		@include Elevation(0, 0);
 
+		Align-items: Center;
 		Box-sizing: Border-box;
 		Display: Flex;
+		Height: 65px;
 		Justify-content: Space-between;
-		Padding-block: 20px;
 		Padding-inline: #{25px + $BorderRadius * 2};
 		Position: Fixed;
 		Top: 0;
@@ -37,7 +38,7 @@
 		{
 			@include Elevation(2, 0);
 
-			Box-shadow: Shadows.$Low;
+			Box-shadow: Shadows.$Medium;
 
 			@media (Prefers-contrast: More)
 			{

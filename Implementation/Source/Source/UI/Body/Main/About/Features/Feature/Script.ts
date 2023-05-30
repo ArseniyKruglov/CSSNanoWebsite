@@ -1,21 +1,17 @@
 import { BaseElement } from '../../../../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import { Description } from './Description/Script'
-import { Image } from './Image/Script'
-import { Title } from './Title/Script'
+import { Element_Description } from './Description/Script'
+import { LibraryElement_Image } from './Image/Script'
+import { Element_Title } from './Title/Script'
 
 
 
-export namespace Feature
+export namespace Element_Feature
 {
-	export type Type_Description = string
-
-
-
 	export interface Interface
 	{
-		'Image': Image.Interface
-		'Title': Title.Interface
-		'Description': Type_Description
+		'Image': LibraryElement_Image.Interface
+		'Title': Element_Title.Type_Text
+		'Description': Element_Description.Type_Text
 	}
 
 
@@ -24,12 +20,12 @@ export namespace Feature
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'_HTMLTag': 'LI',
-			'_Children':
+			'HTMLTag': 'LI',
+			'Children':
 			[
-				Image.Get(Argument.Image),
-				Title.Get(Argument.Title),
-				Description.Get({ 'Text': Argument.Description })
+				LibraryElement_Image.Get(Argument.Image),
+				Element_Title.Get(Argument.Title),
+				Element_Description.Get(Argument.Description)
 			]
 		})
 	}

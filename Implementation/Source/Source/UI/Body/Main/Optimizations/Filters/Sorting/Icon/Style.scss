@@ -1,12 +1,14 @@
 @import '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Icon/Style';
 
+@import './Selector';
+
 
 
 $Size: 20px;
 
 
 
-#Root > Main > .Optimizations > Div > :First-child > Div
+#{$Selector}
 {
 	@include Icon_Size($Size);
 }

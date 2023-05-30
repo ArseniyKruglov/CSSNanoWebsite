@@ -1,29 +1,23 @@
 import { BaseElement } from '../../../../../../../../../Library/Code/Frontend/Source/BaseElement'
+import { Element_Arrow } from './Arrow/Script'
+import { Element_Code as ChildrenElement_Code } from './Code/Script'
 
 
 
-export namespace Code
+export namespace Element_Code
 {
-	export type Type_Code = string
-
-
-
-	export interface Interface
+	export function Get(): HTMLDivElement
 	{
-		'_Code': Type_Code
-	}
-
-
-
-	export function Get(Argument: Interface): HTMLElement
-	{
-		return <HTMLElement> BaseElement.Create
+		return <HTMLDivElement> BaseElement.Create
 		({
-			'_HTMLTag': 'Code',
-			'_Modifications': (Element) =>
-			{
-				Element.innerHTML = Argument._Code
-			}
+			'HTMLTag': 'Div',
+			'Classes': ['Code'],
+			'Children':
+			[
+				ChildrenElement_Code.Get('Before'),
+				Element_Arrow.Get(),
+				ChildrenElement_Code.Get('After')
+			]
 		})
 	}
 }

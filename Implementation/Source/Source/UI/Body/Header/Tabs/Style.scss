@@ -9,7 +9,7 @@
 {
 	@media #{$WideScreen}
 	{
-		Translate: 0 2.5px;
+		Transform: TranslateY(2.5px);
 	}
 
 	@media #{$NarrowScreen}

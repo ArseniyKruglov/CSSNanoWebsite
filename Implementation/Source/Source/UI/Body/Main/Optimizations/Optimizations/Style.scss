@@ -1,6 +1,6 @@
 @import '../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
-@import './Optimization/Style';
+@import './ListItem/Style';
 
 @import './Selector';
 
@@ -15,6 +15,7 @@ $MinCardWidth: 400px;
 {
 	List-style: None;
 	Margin: 0;
+	Margin-block-start: 25px;
 	Padding: 0;
 
 	@media #{$WideScreen}

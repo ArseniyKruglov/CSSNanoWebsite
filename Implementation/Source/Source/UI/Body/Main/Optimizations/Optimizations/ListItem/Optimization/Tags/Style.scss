@@ -1,0 +1,19 @@
+@import './ListItem/Style';
+
+@import './Selector';
+
+
+
+$Gap: 5px;
+
+
+
+#{$Selector}
+{
+	Display: Flex;
+	Flex-wrap: Wrap;
+	Gap: #{$Gap};
+	List-style-type: None;
+	Margin: 0;
+	Padding: 0;
+}

@@ -1,22 +1,22 @@
 import { BaseElement } from '../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import * as LogoElement from './Logo/Script'
-import * as TabsElement from './Tabs/Script'
+import { Element_Logo } from './Logo/Script'
+import { Element_Tabs } from './Tabs/Script'
 
 
 
-export namespace Header
+export namespace Element_Header
 {
 	export function Get(): HTMLElement
 	{
 		return <HTMLElement> BaseElement.Create
 		({
-			'_HTMLTag': 'Header',
-			'_Children':
+			'HTMLTag': 'Header',
+			'Children':
 			[
-				LogoElement.Get(),
-				TabsElement.Get()
+				Element_Logo.Get(),
+				Element_Tabs.Get()
 			],
-			'_Modifications': (Element) =>
+			'Modifications': (Element) =>
 			{
 				document.addEventListener('scroll', () =>
 				{

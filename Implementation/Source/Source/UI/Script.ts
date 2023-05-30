@@ -1,11 +1,14 @@
-import * as BodyElement from './Body/Script'
+import { Body } from './Body/Script'
 import './Style.scss'
 
 
 
-export function Draw(): void
+export namespace UI
 {
-	document.documentElement.lang = 'en'
+	export function Draw(): void
+	{
+		document.documentElement.lang = 'en'
 
-	BodyElement.Draw()
+		Body.Draw()
+	}
 }

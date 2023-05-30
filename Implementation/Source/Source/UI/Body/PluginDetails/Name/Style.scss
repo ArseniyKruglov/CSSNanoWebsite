@@ -1,0 +1,11 @@
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Font-family: #{$Font_Title};
+	Font-size: 32px;
+	Font-weight: 400;
+	Margin: 0;
+}

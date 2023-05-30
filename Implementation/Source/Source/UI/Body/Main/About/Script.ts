@@ -1,21 +1,21 @@
 import { BaseElement } from '../../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import { Features } from './Features/Script'
-import { FirstSection } from './FirstSection/Script'
+import { Element_Features } from './Features/Script'
+import { Element_Main } from './Main/Script'
 
 
 
-export namespace About
+export namespace Element_About
 {
 	export function Get(): HTMLDivElement
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'_HTMLTag': 'Div',
-			'_ClassNames': ['About', 'Selected'],
-			'_Children':
+			'HTMLTag': 'Div',
+			'Classes': ['About', 'Selected'],
+			'Children':
 			[
-				FirstSection.Get(),
-				Features.Get()
+				Element_Main.Get(),
+				Element_Features.Get()
 			]
 		})
 	}

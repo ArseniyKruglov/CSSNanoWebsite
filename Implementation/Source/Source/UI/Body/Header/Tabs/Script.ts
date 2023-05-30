@@ -1,17 +1,20 @@
-import { Tabs } from '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Tabs/Script'
+import { Tabs as LibraryElement_Tab } from '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Tabs/Script'
 import { Data } from '../../../../Main'
 
 
 
-export function Get(): HTMLElement
+export namespace Element_Tabs
 {
-	return Tabs.Get
-	({
-		'Tabs': Data.Tabs.List.map((Tab) =>
-		({
-			'Title': Tab.ReadableName,
-			'Link': Tab.ID,
-			'Selected': Tab === Data.Tabs.List[0]
-		}))
-	})
+	export function Get(): HTMLElement
+	{
+		return LibraryElement_Tab.Get
+		(
+			Data.Tabs.List.map((Tab) =>
+			({
+				'Title': Tab.ReadableName,
+				'Link': Tab.ID,
+				'Selected': Tab === Data.Tabs.List[0]
+			}))
+		)
+	}
 }
