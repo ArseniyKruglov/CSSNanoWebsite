@@ -23,7 +23,7 @@
 		Display: Flex;
 		Height: 65px;
 		Justify-content: Space-between;
-		Padding-inline: #{25px + $BorderRadius * 2};
+		Padding-inline: #{25px + $BorderRadius_Big};
 		Position: Fixed;
 		Top: 0;
 		Transition: Box-shadow 250ms, Background-color 250ms;

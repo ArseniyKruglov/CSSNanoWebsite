@@ -1,13 +1,13 @@
 @use './Fonts/GoogleSans/Style' as GoogleSans;
 @use './Fonts/Lora/Style' as Lora;
-@use './Fonts/SpaceMono/Style' as SpaceMono;
+@use './Fonts/JetBrainsMono/Style.scss' as JetBrainsMono;
 
 
 
 $Font_Title: GoogleSans.$Font;
 $Font_UI: GoogleSans.$Font;
 $Font_Text: Lora.$Font;
-$Font_Monospace: SpaceMono.$Font;
+$Font_Monospace: JetBrainsMono.$Font;
 
 
 
@@ -26,4 +26,6 @@ $Gray_Saturation: 5%;
 
 
 
-$BorderRadius: 2.5px;
+$BorderRadius_Small: 1px;
+$BorderRadius_Medium: 2.5px;
+$BorderRadius_Big: 5px;

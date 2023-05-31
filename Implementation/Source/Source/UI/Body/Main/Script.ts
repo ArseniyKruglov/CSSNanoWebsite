@@ -22,10 +22,9 @@ export namespace Element_Main
 			{
 				Element.parentElement!.children[0].children[1].addEventListener('SelectionChanged', (Event: CustomEvent) =>
 				{
-					[...Element.children].forEach((Child, Index) =>
-					{
-						Child.classList.toggle('Selected', Event.detail.Index === Index)
-					})
+					let Index: number = 0
+					for (const Child of Element.children)
+						Child.classList.toggle('Selected', Event.detail.Index === Index++)
 				})
 			}
 		})

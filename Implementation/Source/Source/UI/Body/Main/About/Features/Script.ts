@@ -5,56 +5,57 @@ import { Element_Feature } from './Feature/Script'
 
 export namespace Element_Features
 {
-	export function Get(): HTMLDivElement
+	const List: Element_Feature.Interface[] =
+	[
+		{
+			'Image':
+			{
+				'Source': 'https://cssnano.co/img/postcss.svg',
+				'Dimensions':
+				{
+					'Width': 1,
+					'Height': 1
+				}
+			},
+			'Name': 'PostCSS-based',
+			'Description': 'CSS Nano is built upon PostCSS plugins and environments.'
+		},
+		{
+			'Image':
+			{
+				'Source': 'https://cssnano.co/img/undraw_settings.svg',
+				'Dimensions':
+				{
+					'Width': 5,
+					'Height': 4
+				}
+			},
+			'Name': '30+ plugins',
+			'Description': 'CSS Nano has more than 30 plugins for optimizing your CSS.'
+		},
+		{
+			'Image':
+			{
+				'Source': 'https://cssnano.co/img/undraw_config.svg',
+				'Dimensions':
+				{
+					'Width': 5,
+					'Height': 4
+				}
+			},
+			'Name': 'Configurable',
+			'Description': 'CSS Nano supports custom configs using presets which controls the level of optimization.'
+		}
+	]
+
+
+
+	export function Get(): HTMLUListElement
 	{
-		return <HTMLDivElement> BaseElement.Create
+		return <HTMLUListElement> BaseElement.Create
 		({
 			'HTMLTag': 'UL',
-			'Children':
-			[
-				Element_Feature.Get
-				({
-					'Image':
-					{
-						'Source': 'https://cssnano.co/img/postcss.svg',
-						'Dimensions':
-						{
-							'Width': 1,
-							'Height': 1
-						}
-					},
-					'Title': 'PostCSS-based',
-					'Description': 'CSS Nano is built upon PostCSS plugins and environments.'
-				}),
-				Element_Feature.Get
-				({
-					'Image':
-					{
-						'Source': 'https://cssnano.co/img/undraw_settings.svg',
-						'Dimensions':
-						{
-							'Width': 5,
-							'Height': 4
-						}
-					},
-					'Title': '30+ plugins',
-					'Description': 'CSS Nano has more than 30 plugins for optimizing your CSS.'
-				}),
-				Element_Feature.Get
-				({
-					'Image':
-					{
-						'Source': 'https://cssnano.co/img/undraw_config.svg',
-						'Dimensions':
-						{
-							'Width': 5,
-							'Height': 4
-						}
-					},
-					'Title': 'Configurable',
-					'Description': 'CSS Nano supports custom configs using presets which controls the level of optimization.'
-				})
-			]
+			'Children': List.map((Feature) => Element_Feature.Get(Feature))
 		})
 	}
 }

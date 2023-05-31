@@ -1,0 +1,12 @@
+@import '../../../Constants';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Font-family: #{$Font_Text};
+	Margin-inline-start: 2.5px;
+	User-select: Text;
+}

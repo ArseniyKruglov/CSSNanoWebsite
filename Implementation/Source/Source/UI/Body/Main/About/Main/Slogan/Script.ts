@@ -1,22 +1,14 @@
-import { Heading } from '../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Script'
+import { LibraryElement_Heading } from '../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Script'
 
 
 
 export namespace Element_Slogan
 {
-	type Type_Text = string
-
-
-
-	const Text: Type_Text = 'PostCSS-based CSS optimizer.'
-
-
-
-	export function Get(): HTMLHeadingElement
+	export function Get(): ReturnType<typeof LibraryElement_Heading.Get>
 	{
-		return <HTMLHeadingElement> Heading.Get
+		return <ReturnType<typeof LibraryElement_Heading.Get>> LibraryElement_Heading.Get
 		({
-			'Text': Text,
+			'Text': 'PostCSS-based CSS optimizer.',
 			'Level': 2
 		})
 	}

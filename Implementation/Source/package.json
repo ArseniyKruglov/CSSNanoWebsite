@@ -2,7 +2,7 @@
 	"private": true,
 	"scripts":
 	{
-		"build": "webpack"
+		"Dev": "webpack"
 	},
 	"devDependencies":
 	{

@@ -1,4 +1,4 @@
-import { LibraryElement_Heading } from '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Script'
+import { LibraryElement_Heading } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Script'
 
 
 
@@ -13,7 +13,7 @@ export namespace Element_Name
 		return LibraryElement_Heading.Get
 		({
 			'Text': Name,
-			'Level': 1
+			'Level': 3
 		})
 	}
 }

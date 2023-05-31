@@ -1,5 +1,5 @@
 import { BaseElement } from '../../../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import * as SortingElement from './Sorting/Script'
+import { Element_Sorting } from './Sorting/Script'
 
 
 
@@ -10,7 +10,7 @@ export namespace Element_Filters
 		return <HTMLDivElement> BaseElement.Create
 		({
 			'HTMLTag': 'Div',
-			'Children': [SortingElement.Get()]
+			'Children': [Element_Sorting.Get()]
 		})
 	}
 }

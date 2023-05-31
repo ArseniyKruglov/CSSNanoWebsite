@@ -1,3 +1,5 @@
+@use '../../../../../../../../../../../Library/Code/Frontend/Source/Shadows' as Shadows;
+
 @import '../../../../../../Constants';
 
 @import '../../../../../../../../../../../Library/Code/Frontend/Source/Colors/Gray';
@@ -32,7 +34,8 @@ $BorderColor_NarrowScreen_DarkTheme: Gray(25%);
 	@media #{$WideScreen}
 	{
 		Border: 1px Solid #{$BorderColor_WideScreen};
-		Border-radius: #{$BorderRadius};
+		Border-radius: #{$BorderRadius_Medium};
+		Transition: Box-shadow 200ms;
 
 		@media (Prefers-color-scheme: Dark)
 		{
@@ -44,6 +47,11 @@ $BorderColor_NarrowScreen_DarkTheme: Gray(25%);
 		@media (Prefers-contrast: More)
 		{
 			Border-color: CanvasText;
+		}
+
+		&:Hover:Not(:Active)
+		{
+			Box-shadow: #{Shadows.$Medium};
 		}
 	}
 

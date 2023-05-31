@@ -1,7 +1,8 @@
-@import '../../Constants';
+@import '../../../../../../../Library/Code/Frontend/Source/Elements/Elements/FullscreenDialog/Style';
+@import '../../../../../../../Library/Code/Frontend/Source/Elevation';
+@import '../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
-@import '../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Dialog/Style';
-
+@import './Description/Style';
 @import './Name/Style';
 
 @import './Selector';
@@ -10,5 +11,15 @@
 
 #{$Selector}
 {
+	@include Elevation(0, 0);
 
+	@media #{$WideScreen}
+	{
+		Padding: 75px;
+	}
+
+	@media #{$NarrowScreen}
+	{
+		Padding: 40px;
+	}
 }

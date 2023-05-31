@@ -1,4 +1,4 @@
-import { Heading } from '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Script'
+import { LibraryElement_Heading } from '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Script'
 
 
 
@@ -6,7 +6,7 @@ export namespace Element_Logo
 {
 	export function Get(): HTMLHeadingElement
 	{
-		return Heading.Get
+		return LibraryElement_Heading.Get
 		({
 			'Text': 'CSS Nano',
 			'Level': 1

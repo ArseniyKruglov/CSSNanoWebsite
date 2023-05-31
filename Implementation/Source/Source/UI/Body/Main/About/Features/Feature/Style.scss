@@ -5,7 +5,7 @@
 
 @import './Description/Style';
 @import './Image/Style';
-@import './Title/Style';
+@import './Name/Style';
 
 @import './Selector';
 
@@ -20,7 +20,7 @@
 	@media #{$WideScreen}
 	{
 		Border: 1px Solid #{Gray(75%)};
-		Border-radius: #{$BorderRadius};
+		Border-radius: #{$BorderRadius_Medium};
 		Flex-basis: 0;
 		Flex-grow: 1;
 		Padding: 30px;

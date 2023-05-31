@@ -19,8 +19,7 @@ $FontSize_NarrowScreen: 22px;
 	Font-family: #{$FontFamily};
 	Font-weight: #{$FontWeight};
 	Line-height: 1;
-	Margin: 0;
-	Margin-block-end: 10px;
+	Margin-block: 0 10px;
 	User-select: Text;
 
 	@media #{$NarrowScreen}

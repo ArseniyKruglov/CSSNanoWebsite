@@ -1,6 +1,7 @@
 import { BaseElement } from '../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import { Element_Dialog } from '../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Dialog/Script'
+import { LibraryElement_FullscreenDialog } from '../../../../../../../Library/Code/Frontend/Source/Elements/Elements/FullscreenDialog/Script'
 import * as Entities from '../../../Entities/Namespace'
+import { Element_Description } from './Description/Script'
 import { Element_Name } from './Name/Script'
 
 
@@ -11,8 +12,12 @@ export namespace Element_PluginDetails
 	{
 		return <HTMLDialogElement> BaseElement.Create
 		({
-			'Element': Element_Dialog.Get(),
-			'Children': [Element_Name.Get(Plugin.ReadableName)],
+			'Element': LibraryElement_FullscreenDialog.Get(),
+			'Children':
+			[
+				Element_Name.Get(Plugin.ReadableName),
+				Element_Description.Get(Plugin.Description)
+			],
 			'OnDraw': (Element) =>
 			{
 				(<HTMLDialogElement> Element).showModal()

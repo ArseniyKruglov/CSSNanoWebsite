@@ -9,9 +9,10 @@
 #{$Selector}
 {
 	Border: 1px Solid #{Gray(75%)};
-	Border-radius: #{$BorderRadius * 2};
+	Border-radius: #{$BorderRadius_Big};
 	Font-family: #{$Font_Monospace};
 	Font-size: 14px;
+	Outline: None;		// Awful hotfix
 	Overflow: Auto;
 	Padding: 28px;
 	User-select: Text;

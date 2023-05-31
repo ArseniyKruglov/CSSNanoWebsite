@@ -1,18 +1,18 @@
-import { DecorativeImageWithAlpha } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/DecorativeImageWithAlpha/Script'
+import { LibraryElement_DecorativeImageWithAlpha } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/DecorativeImageWithAlpha/Script'
 
 
 
-export namespace LibraryElement_Image
+export namespace Element_Image
 {
-	export interface Interface extends DecorativeImageWithAlpha.Interface
+	export interface Interface extends LibraryElement_DecorativeImageWithAlpha.Interface
 	{
 
 	}
 
 
 
-	export function Get(Argument: Interface): ReturnType<typeof DecorativeImageWithAlpha.Get>
+	export function Get(Image: Interface): ReturnType<typeof LibraryElement_DecorativeImageWithAlpha.Get>
 	{
-		return DecorativeImageWithAlpha.Get(Argument)
+		return LibraryElement_DecorativeImageWithAlpha.Get(Image)
 	}
 }

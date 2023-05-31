@@ -1,3 +1,7 @@
+@import '../../../Constants';
+
+@import '../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
 @import './Selector';
 
 
@@ -5,7 +9,16 @@
 #{$Selector}
 {
 	Font-family: #{$Font_Title};
-	Font-size: 32px;
 	Font-weight: 400;
-	Margin: 0;
+	User-select: Text;
+
+	@media #{$WideScreen}
+	{
+		Font-size: 60px;
+	}
+
+	@media #{$NarrowScreen}
+	{
+		Font-size: 36px;
+	}
 }

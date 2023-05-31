@@ -1,4 +1,4 @@
-import { LibraryElement_Paragraph } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Paragraph/Script'
+import { LibraryElement_Paragraph } from '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Paragraph/Script'
 
 
 

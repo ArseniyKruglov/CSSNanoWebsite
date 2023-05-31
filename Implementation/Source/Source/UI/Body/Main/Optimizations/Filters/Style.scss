@@ -22,7 +22,7 @@ $Shadow: Shadows.$Medium;
 {
 	@include Elevation($Elevation, 0);
 
-	Border-radius: #{$BorderRadius * 2};
+	Border-radius: #{$BorderRadius_Big};
 	Box-shadow: #{$Shadow};
 	Padding: #{$Padding};
 

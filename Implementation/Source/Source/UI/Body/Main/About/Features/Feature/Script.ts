@@ -1,7 +1,7 @@
 import { BaseElement } from '../../../../../../../../../../Library/Code/Frontend/Source/BaseElement'
 import { Element_Description } from './Description/Script'
-import { LibraryElement_Image } from './Image/Script'
-import { Element_Title } from './Title/Script'
+import { Element_Image } from './Image/Script'
+import { Element_Name } from './Name/Script'
 
 
 
@@ -9,9 +9,9 @@ export namespace Element_Feature
 {
 	export interface Interface
 	{
-		'Image': LibraryElement_Image.Interface
-		'Title': Element_Title.Type_Text
-		'Description': Element_Description.Type_Text
+		'Image': Element_Image.Interface
+		'Name': Element_Name.Type_Name
+		'Description': Element_Description.Type_Description
 	}
 
 
@@ -23,8 +23,8 @@ export namespace Element_Feature
 			'HTMLTag': 'LI',
 			'Children':
 			[
-				LibraryElement_Image.Get(Argument.Image),
-				Element_Title.Get(Argument.Title),
+				Element_Image.Get(Argument.Image),
+				Element_Name.Get(Argument.Name),
 				Element_Description.Get(Argument.Description)
 			]
 		})

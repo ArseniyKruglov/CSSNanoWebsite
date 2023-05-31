@@ -4,11 +4,14 @@ import { Element_Select } from './Select/Script'
 
 
 
-export function Get(): ReturnType<typeof LibraryElement_InputWithIcon.Get>
+export namespace Element_Sorting
 {
-	return LibraryElement_InputWithIcon.Get
-	([
-		Element_Icon.Get(),
-		Element_Select.Get()
-	])
+	export function Get(): ReturnType<typeof LibraryElement_InputWithIcon.Get>
+	{
+		return LibraryElement_InputWithIcon.Get
+		([
+			Element_Icon.Get(),
+			Element_Select.Get()
+		])
+	}
 }
