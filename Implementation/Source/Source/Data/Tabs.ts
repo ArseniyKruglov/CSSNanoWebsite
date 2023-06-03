@@ -1,4 +1,4 @@
-import * as Tab from '../Entities/Tab'
+import { Tab } from '../Entities/Tab'
 
 
 

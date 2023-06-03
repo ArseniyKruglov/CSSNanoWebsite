@@ -1,0 +1,21 @@
+@import '../../../../../Constants';
+
+@import '../../../../../../../../../../Library/Code/Frontend/Source/Colors/Gray';
+@import '../../../../../../../../../../Library/Code/Frontend/Source/FontSizes';
+@import '../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Font-family: #{$Font_UI};
+	Font-variant-numeric: Tabular-nums;
+	Font-weight: 500;
+
+	@media #{$WideScreen}
+	{
+		Font-size: #{$FontSize_32};
+	}
+}

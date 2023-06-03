@@ -14,8 +14,7 @@ $MinCardWidth: 400px;
 #{$Selector}
 {
 	List-style: None;
-	Margin: 0;
-	Margin-block-start: 25px;
+	Margin-block-end: 0;
 	Padding: 0;
 
 	@media #{$WideScreen}
@@ -23,5 +22,11 @@ $MinCardWidth: 400px;
 		Display: Grid;
 		Gap: #{$Gap};
 		Grid-template-columns: Repeat(Auto-fill, MinMax(#{$MinCardWidth}, 1fr));
+		Margin-block-start: 25px;
+	}
+
+	@media #{$NarrowScreen}
+	{
+		Margin-block-start: 15px;
 	}
 }

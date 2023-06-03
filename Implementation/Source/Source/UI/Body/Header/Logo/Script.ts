@@ -7,9 +7,9 @@ export namespace Element_Logo
 	export function Get(): HTMLHeadingElement
 	{
 		return LibraryElement_Heading.Get
-		({
-			'Text': 'CSS Nano',
-			'Level': 1
-		})
+		(
+			'CSS Nano',
+			1
+		)
 	}
 }

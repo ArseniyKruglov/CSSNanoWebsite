@@ -4,11 +4,7 @@
 
 
 
-$FontSize: 15.5px;
-
-
-
 #{$Selector}
 {
-	@include Select_FontSize($FontSize);
+
 }

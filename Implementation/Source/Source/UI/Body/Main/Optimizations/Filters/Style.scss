@@ -11,7 +11,7 @@
 
 
 
-$Elevation: 3;
+$Elevation: 2;
 $Margin: 10px;
 $Padding: 20px;
 $Shadow: Shadows.$Medium;
@@ -25,10 +25,18 @@ $Shadow: Shadows.$Medium;
 	Border-radius: #{$BorderRadius_Big};
 	Box-shadow: #{$Shadow};
 	Padding: #{$Padding};
+	Position: Sticky;
+	Z-index: 1;
+
+	@media #{$WideScreen}
+	{
+		Top: #{65px + 10px};
+	}
 
 	@media #{$NarrowScreen}
 	{
 		Margin: 0 #{$Margin};
+		Top: #{$Margin};
 	}
 
 	@media (Prefers-contrast: More)

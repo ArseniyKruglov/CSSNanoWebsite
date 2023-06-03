@@ -22,11 +22,11 @@
 
 	@media (Prefers-contrast: More)
 	{
-		Color: CanvasText;
+		Color: Inherit;
 	}
 
 	@media (Monochrome)
 	{
-		Color: CanvasText;
+		Color: Inherit;
 	}
 }

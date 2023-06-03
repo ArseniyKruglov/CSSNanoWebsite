@@ -7,23 +7,16 @@
 
 
 
-$FontFamily: $Font_Title;
-$FontWeight: 400;
-$FontSize_WideScreen: 24px;
-$FontSize_NarrowScreen: 22px;
-
-
-
 #{$Selector}
 {
-	Font-family: #{$FontFamily};
-	Font-weight: #{$FontWeight};
+	Font-family: #{$Font_Title};
+	Font-weight: 400;
 	Line-height: 1;
 	Margin-block: 0 10px;
 	User-select: Text;
 
 	@media #{$NarrowScreen}
 	{
-		Font-size: #{$FontSize_NarrowScreen};
+		Font-size: 22px;
 	}
 }

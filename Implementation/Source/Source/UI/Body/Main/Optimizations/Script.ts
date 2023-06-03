@@ -1,12 +1,13 @@
 import { BaseElement } from '../../../../../../../../Library/Code/Frontend/Source/BaseElement'
+import { Entities } from '../../../../Main'
 import { Element_Filters } from './Filters/Script'
-import { Plugins as OptimizationsChild } from './Optimizations/Script'
+import { Element_Plugins as ChildElement_Plugins } from './Optimizations/Script'
 
 
 
 export namespace Element_Plugins
 {
-	export function Get(): HTMLDivElement
+	export function Get(PluginsList: Entities.Plugin.Interface[]): HTMLDivElement
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
@@ -15,7 +16,7 @@ export namespace Element_Plugins
 			'Children':
 			[
 				Element_Filters.Get(),
-				OptimizationsChild.Get()
+				ChildElement_Plugins.Get(PluginsList, ChildElement_Plugins.SortingType.SortingTypes.Tags)
 			]
 		})
 	}

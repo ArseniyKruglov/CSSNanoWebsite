@@ -8,7 +8,7 @@
 
 
 
-$Elevation: 3;
+$Elevation: 2;
 $Padding: 20px;
 $Shadow: Shadows.$Medium;
 
@@ -16,9 +16,22 @@ $Shadow: Shadows.$Medium;
 
 #{$Selector}
 {
-	@include Elevation($Elevation, 0);
-
 	Border-radius: #{$BorderRadius_Big};
 	Box-shadow: #{$Shadow};
 	Padding: #{$Padding};
+
+	@media (Prefers-color-scheme: Dark)
+	{
+		@include Elevation($Elevation, 0);
+	}
+
+	@media (Prefers-contrast: More)
+	{
+		Box-shadow: None;
+	}
+
+	@media (Forced-colors: Active), (Prefers-contrast: More)
+	{
+		Border: 2px Solid CanvasText;
+	}
 }

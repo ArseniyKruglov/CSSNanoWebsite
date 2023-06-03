@@ -7,11 +7,6 @@
 
 
 
-$FontSize_WideScreen: 15.5px;
-$FontSize_NarrowScreen: 14.5px;
-
-
-
 #{$Selector}
 {
 	Font-family: #{$Font_Text};
@@ -21,11 +16,11 @@ $FontSize_NarrowScreen: 14.5px;
 
 	@media #{$WideScreen}
 	{
-		Font-size: #{$FontSize_WideScreen};
+		Font-size: 15.5px;
 	}
 
 	@media #{$NarrowScreen}
 	{
-		Font-size: #{$FontSize_NarrowScreen};
+		Font-size: 14.5px;
 	}
 }

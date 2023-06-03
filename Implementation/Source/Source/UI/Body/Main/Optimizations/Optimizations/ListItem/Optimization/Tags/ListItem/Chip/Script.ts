@@ -6,7 +6,7 @@ import * as Entities from '../../../../../../../../../../Entities/Namespace'
 
 export namespace Chip
 {
-	export function Get(Tag: Entities.Tag.Interface): HTMLLIElement
+	export function Get(Tag: Entities.Tag.Tag.Interface): HTMLLIElement
 	{
 		return <HTMLLIElement> BaseElement.Create
 		({

@@ -4,6 +4,7 @@
 
 @import './Code/Style';
 @import './Options/Style';
+@import './Statistics/Style';
 
 @import './Selector';
 
@@ -13,8 +14,8 @@
 {
 	@media #{$WideScreen}
 	{
-		Padding-block: 15px 25px;
-		Padding-inline: 25px;
+		Padding-block: 15px 20px;
+		Padding-inline: 20px;
 	}
 
 	@media #{$NarrowScreen}

@@ -1,4 +1,5 @@
 import { BaseElement } from '../../../../../../../Library/Code/Frontend/Source/BaseElement'
+import { Plugins } from '../../../Data/Plugins'
 import { Element_About } from './About/Script'
 import { Element_Plugins } from './Optimizations/Script'
 import { Element_Playground } from './Playground/Script'
@@ -15,7 +16,7 @@ export namespace Element_Main
 			'Children':
 			[
 				Element_About.Get(),
-				Element_Plugins.Get(),
+				Element_Plugins.Get(Plugins.List),
 				Element_Playground.Get()
 			],
 			'OnDraw': (Element) =>

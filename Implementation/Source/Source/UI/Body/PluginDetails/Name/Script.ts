@@ -11,9 +11,9 @@ export namespace Element_Name
 	export function Get(Name: Type_Name): ReturnType<typeof LibraryElement_Heading.Get>
 	{
 		return LibraryElement_Heading.Get
-		({
-			'Text': Name,
-			'Level': 1
-		})
+		(
+			Name,
+			1
+		)
 	}
 }

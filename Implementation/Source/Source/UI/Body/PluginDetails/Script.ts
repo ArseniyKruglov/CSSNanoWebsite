@@ -8,9 +8,9 @@ import { Element_Name } from './Name/Script'
 
 export namespace Element_PluginDetails
 {
-	export function Get(Plugin: Entities.Plugin.Interface): HTMLDialogElement
+	export function Get(Plugin: Entities.Plugin.Interface): ReturnType<typeof LibraryElement_FullscreenDialog.Get>
 	{
-		return <HTMLDialogElement> BaseElement.Create
+		return <ReturnType<typeof LibraryElement_FullscreenDialog.Get>> BaseElement.Create
 		({
 			'Element': LibraryElement_FullscreenDialog.Get(),
 			'Children':
@@ -20,8 +20,21 @@ export namespace Element_PluginDetails
 			],
 			'OnDraw': (Element) =>
 			{
-				(<HTMLDialogElement> Element).showModal()
+				Open(<HTMLDialogElement> Element)
+				SetTabTitle(Plugin.ReadableName)
 			}
 		})
+	}
+
+
+
+	function Open(Dialog: HTMLDialogElement): void
+	{
+		Dialog.showModal()
+	}
+
+	function SetTabTitle(ReadableName: Entities.Plugin.Type_ReadableName): void
+	{
+		document.title = ReadableName
 	}
 }

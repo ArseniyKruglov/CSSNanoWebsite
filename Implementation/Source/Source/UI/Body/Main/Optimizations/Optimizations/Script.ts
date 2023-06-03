@@ -1,44 +1,50 @@
 import { BaseElement } from '../../../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import * as PluginsData from '../../../../../Data/Plugins'
 import { Entities } from '../../../../../Main'
 import { Element_ListItem } from './ListItem/Script'
 
 
 
-export namespace Plugins
+export namespace Element_Plugins
 {
-	export type Type_SortingTypeReadableName = string
-
-
-
-	export interface Interface_SortingType
+	export namespace SortingType
 	{
-		'ReadableName': Type_SortingTypeReadableName
-		'Function': (Plugins: Entities.Plugin.Interface[]) => Entities.Plugin.Interface[]
+		export type Type_ReadableName = string
+		export type Type_Function = (Plugins: Entities.Plugin.Interface[]) => Entities.Plugin.Interface[]
+
+
+
+		export interface Interface
+		{
+			'ReadableName': Type_ReadableName
+			'Function': (Plugins: Entities.Plugin.Interface[]) => Entities.Plugin.Interface[]
+		}
+
+
+
+		export const SortingTypes: { [Key in Type_ReadableName]: Interface } =
+		{
+			'Alphabetical':
+			{
+				'ReadableName': 'Alphabetical',
+				'Function': (Plugins) => Plugins.sort((Plugin_1, Plugin_2) => Plugin_1.ReadableName.localeCompare(Plugin_2.ReadableName))
+			},
+
+			'Tags':
+			{
+				'ReadableName': 'Tags',
+				'Function': (Plugins) => Plugins
+			}
+		}
 	}
 
 
 
-	export const SortingTypes: Interface_SortingType[] =
-	[
-		{
-			'ReadableName': 'Alphabetical',
-			'Function': (Plugins) => Plugins.sort((Plugin_1, Plugin_2) => Plugin_1.ReadableName.localeCompare(Plugin_2.ReadableName))
-		},
-		{
-			'ReadableName': 'Tags',
-			'Function': (Plugins) => Plugins
-		}
-	]
-
-
-
-	export function Get(SortingType: Interface_SortingType = SortingTypes[0]): HTMLUListElement
+	export function Get(PluginsList: Entities.Plugin.Interface[], SortingType: SortingType.Interface): HTMLUListElement
 	{
 		return <HTMLUListElement> BaseElement.Create
 		({
 			'HTMLTag': 'UL',
-			'Children': (SortingType.Function)(PluginsData.List).map((Plugin) => Element_ListItem.Get(Plugin))
+			'Children': (SortingType.Function)(PluginsList).map((Plugin) => Element_ListItem.Get(Plugin))
 		})
 	}
 }

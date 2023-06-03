@@ -13,8 +13,8 @@ export namespace Body
 		document.body.append
 		(
 			Element_Header.Get(),
+			Element_BottomNavigation.Get(),
 			Element_Main.Get(),
-			Element_BottomNavigation.Get()
 		)
 	}
 }

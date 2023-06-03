@@ -13,10 +13,10 @@ export namespace Element_Code
 		return <HTMLElement> BaseElement.Create
 		({
 			'HTMLTag': 'Code',
+			'Text': Code,
 			'Modifications': (Element) =>
 			{
-				(<HTMLElement> Element).innerText = Code;
-				(<HTMLElement> Element).contentEditable = 'true';
+				(<HTMLElement> Element).contentEditable = 'true'
 			}
 		})
 	}

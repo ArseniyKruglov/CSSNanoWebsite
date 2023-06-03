@@ -17,4 +17,31 @@
 		Padding-block-start: 15px;
 		Padding-inline: #{$Padding};
 	}
+
+	&::After
+	{
+		Background: Linear-gradient(#FFF,  Transparent 10%);
+		Content: '';
+		Display: Block;
+		Height: 100%;
+		Left: 0;
+		Pointer-events: None;
+		Position: Fixed;
+		Width: 100%;
+
+		@media #{$WideScreen}
+		{
+			Top: 65px;
+		}
+
+		@media #{$NarrowScreen}
+		{
+			Top: 0;
+		}
+
+		@media (Prefers-color-scheme: Dark)
+		{
+			Background: Linear-gradient(#000,  Transparent 10%);
+		}
+	}
 }

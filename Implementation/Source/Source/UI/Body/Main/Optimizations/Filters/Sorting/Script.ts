@@ -1,17 +1,16 @@
-import { LibraryElement_InputWithIcon } from '../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/InputWithIcon/Script'
-import { Element_Icon } from './Icon/Script'
+import { LibraryElement_InputWithName } from '../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/InputWithName/Script'
 import { Element_Select } from './Select/Script'
 
 
 
 export namespace Element_Sorting
 {
-	export function Get(): ReturnType<typeof LibraryElement_InputWithIcon.Get>
+	export function Get(): ReturnType<typeof LibraryElement_InputWithName.Get>
 	{
-		return LibraryElement_InputWithIcon.Get
-		([
-			Element_Icon.Get(),
+		return LibraryElement_InputWithName.Get
+		(
+			'Sorting',
 			Element_Select.Get()
-		])
+		)
 	}
 }

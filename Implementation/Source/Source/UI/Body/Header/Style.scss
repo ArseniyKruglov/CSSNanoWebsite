@@ -14,6 +14,8 @@
 
 #{$Selector}
 {
+	Z-index: 1;
+
 	@media #{$WideScreen}
 	{
 		@include Elevation(0, 0);
@@ -23,7 +25,7 @@
 		Display: Flex;
 		Height: 65px;
 		Justify-content: Space-between;
-		Padding-inline: #{25px + $BorderRadius_Big};
+		Padding-inline: #{20px + $BorderRadius_Big};
 		Position: Fixed;
 		Top: 0;
 		Transition: Box-shadow 250ms, Background-color 250ms;
@@ -38,7 +40,7 @@
 		{
 			@include Elevation(2, 0);
 
-			Box-shadow: Shadows.$Medium;
+			Box-shadow: #{Shadows.$Medium};
 
 			@media (Prefers-contrast: More)
 			{

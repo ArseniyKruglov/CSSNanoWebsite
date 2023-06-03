@@ -27,14 +27,24 @@
 
 		@media (Prefers-color-scheme: Dark)
 		{
-			@include Elevation(2, 0);
+			@include Elevation(1, 0);
 
 			Border: None;
+
+			@media (Prefers-contrast: More)
+			{
+				Background: None;
+			}
 		}
 
 		@media (Prefers-contrast: More)
 		{
-			Border-color: CanvasText;
+			Box-shadow: None;
+		}
+
+		@media (Forced-colors: Active), (Prefers-contrast: More)
+		{
+			Border: 1px Solid CanvasText;
 		}
 	}
 

@@ -8,7 +8,7 @@ export namespace Tags
 {
 	export interface Interface
 	{
-		'Tags': Entities.Tag.Interface[]
+		'Tags': Entities.Tag.Tag.Interface[]
 	}
 
 

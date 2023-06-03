@@ -14,8 +14,7 @@
 
 
 
-$Elevation: 2;
-$Padding: 25px;
+$Elevation: 1;
 $BorderColor_WideScreen: Gray(75%);
 $BorderColor_NarrowScreen_LightTheme: Gray(85%);
 $BorderColor_NarrowScreen_DarkTheme: Gray(25%);
@@ -25,17 +24,18 @@ $BorderColor_NarrowScreen_DarkTheme: Gray(25%);
 #{$Selector}
 {
 	Box-sizing: Border-box;
-	Color: Initial;
-	Display: Block;
+	Color: Inherit;
+	Display: Flex;
+	Flex-direction: Column;
 	Height: 100%;
-	Padding: #{$Padding};
+	Padding: 25px;
 	Text-decoration: None;
 
 	@media #{$WideScreen}
 	{
 		Border: 1px Solid #{$BorderColor_WideScreen};
 		Border-radius: #{$BorderRadius_Medium};
-		Transition: Box-shadow 200ms;
+		Transition: Box-shadow 150ms;
 
 		@media (Prefers-color-scheme: Dark)
 		{
@@ -49,9 +49,17 @@ $BorderColor_NarrowScreen_DarkTheme: Gray(25%);
 			Border-color: CanvasText;
 		}
 
-		&:Hover:Not(:Active)
+		&:Hover
 		{
-			Box-shadow: #{Shadows.$Medium};
+			@media (Hover: Hover)
+			{
+				Box-shadow: #{Shadows.$Medium};
+
+				&:Active
+				{
+					Box-shadow: #{Shadows.$Low};
+				}
+			}
 		}
 	}
 

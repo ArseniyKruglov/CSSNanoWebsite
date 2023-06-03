@@ -1,6 +1,7 @@
 @import '../../../../../../Constants';
 
 @import '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Style';
+@import '../../../../../../../../../../../Library/Code/Frontend/Source/FontSizes';
 
 @import './Selector';
 
@@ -9,7 +10,7 @@
 #{$Selector}
 {
 	Font-family: #{$Font_Title};
-	Font-size: 24px;
+	Font-size: #{$FontSize_24};
 	Font-weight: 400;
 	Margin-block: 35px 10px;
 	Text-align: Center;

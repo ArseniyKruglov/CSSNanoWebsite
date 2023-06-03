@@ -1,4 +1,5 @@
 @import '../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Style';
+@import '../../../../../../../../../../Library/Code/Frontend/Source/FontSizes';
 @import '../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
 @import './Selector';
@@ -15,11 +16,11 @@
 
 	@media #{$WideScreen}
 	{
-		Font-size: 36px;
+		Font-size: #{$FontSize_36};
 	}
 
 	@media #{$NarrowScreen}
 	{
-		Font-size: 24px;
+		Font-size: #{$FontSize_24};
 	}
 }

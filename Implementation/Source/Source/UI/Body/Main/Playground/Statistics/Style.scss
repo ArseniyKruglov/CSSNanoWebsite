@@ -1,0 +1,21 @@
+@import '../../../../Constants';
+
+@import './Size/Style';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Display: Grid;
+	Grid-template-columns: 1fr 1fr;
+	Justify-content: Space-between;
+	Margin-block: 35px;
+	Padding-inline: #{$BorderRadius_Big};
+
+	& > :Nth-child(Even)
+	{
+		Text-align: end;
+	}
+}

@@ -1,4 +1,4 @@
-import { Tabs as LibraryElement_Tab } from '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Tabs/Script'
+import { LibraryElement_Tabs } from '../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Tabs/Script'
 import { Data } from '../../../../Main'
 
 
@@ -7,7 +7,7 @@ export namespace Element_Tabs
 {
 	export function Get(): HTMLElement
 	{
-		return LibraryElement_Tab.Get
+		return LibraryElement_Tabs.Get
 		(
 			Data.Tabs.List.map((Tab) =>
 			({
