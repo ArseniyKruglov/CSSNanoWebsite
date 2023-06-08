@@ -10,7 +10,6 @@ export namespace Element_Main
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'HTMLTag': 'Div',
 			'Children':
 			[
 				Element_Logo.Get(),

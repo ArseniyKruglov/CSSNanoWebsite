@@ -10,7 +10,6 @@ export namespace Element_About
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'HTMLTag': 'Div',
 			'Classes': ['About', 'Selected'],
 			'Children':
 			[

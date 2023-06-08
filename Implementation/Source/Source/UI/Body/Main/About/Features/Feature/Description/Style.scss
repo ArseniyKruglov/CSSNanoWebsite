@@ -1,6 +1,6 @@
 @import '../../../../../../Constants';
 
-@import '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Paragraph/Style';
+@import '../../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
 @import './Selector';
 
@@ -8,12 +8,16 @@
 
 #{$Selector}
 {
-	Align-items: Center;
-	Display: Flex;
-	Flex-grow: 1;
 	Font-family: #{$Font_Text};
 	Margin: 0;
 	Text-align: Center;
 	Text-wrap: Balance;
 	User-select: Text;
+
+	@media #{$WideScreen}
+	{
+		Align-items: Center;
+		Display: Flex;
+		Flex-grow: 1;
+	}
 }

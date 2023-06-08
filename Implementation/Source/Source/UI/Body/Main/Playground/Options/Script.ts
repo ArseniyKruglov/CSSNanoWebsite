@@ -9,7 +9,6 @@ export namespace Element_Options
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'HTMLTag': 'Div',
 			'Classes': ['Options'],
 			'Children': [Element_PresetSelector.Get()]
 		})

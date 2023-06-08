@@ -19,8 +19,10 @@
 
 	@media #{$WideScreen}
 	{
-		Border: 1px Solid #{Gray(75%)};
+		Border-color: #{Gray(75%)};
 		Border-radius: #{$BorderRadius_Medium};
+		Border-style: Solid;
+		Border-width: 1px;
 		Flex-basis: 0;
 		Flex-grow: 1;
 		Padding: 30px;

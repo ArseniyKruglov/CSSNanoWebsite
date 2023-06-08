@@ -4,11 +4,7 @@
 
 
 
-$Size: 20px;
-
-
-
 #{$Selector}
 {
-	@include Icon_Size($Size);
+	@include Icon_Size(20px);
 }

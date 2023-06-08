@@ -23,12 +23,12 @@ $BorderColor_NarrowScreen_DarkTheme: Gray(25%);
 
 #{$Selector}
 {
-	Box-sizing: Border-box;
 	Color: Inherit;
-	Display: Flex;
-	Flex-direction: Column;
+	Box-sizing: Border-box;
 	Height: 100%;
 	Padding: 25px;
+	Display: Flex;
+	Flex-direction: Column;
 	Text-decoration: None;
 
 	@media #{$WideScreen}
@@ -42,6 +42,11 @@ $BorderColor_NarrowScreen_DarkTheme: Gray(25%);
 			@include Elevation($Elevation, 0);
 
 			Border: None;
+		}
+
+		@media (Prefers-reduced-motion: Reduce), (Update: Slow)
+		{
+			Transition: None;
 		}
 
 		@media (Prefers-contrast: More)

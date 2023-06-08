@@ -11,7 +11,6 @@ export namespace Element_Plugins
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'HTMLTag': 'Div',
 			'Classes': ['Optimizations'],
 			'Children':
 			[

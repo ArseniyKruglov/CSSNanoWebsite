@@ -9,7 +9,7 @@ export namespace Element_Filters
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'HTMLTag': 'Div',
+			'HTMLTag': 'Form',
 			'Children': [Element_Sorting.Get()]
 		})
 	}

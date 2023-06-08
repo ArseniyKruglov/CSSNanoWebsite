@@ -1,5 +1,6 @@
 @import './Constants';
 
+@import '../../../../../Library/Code/Frontend/Source/FontSizes';
 @import '../../../../../Library/Code/Frontend/Source/Focus';
 
 @import './Body/Style';
@@ -8,7 +9,7 @@
 
 HTML, Dialog
 {
-	Font-size: 16px;
+	Font-size: #{$FontSize_16};
 	User-select: None;
 	-webkit-tap-highlight-color: Transparent;
 

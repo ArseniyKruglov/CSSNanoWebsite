@@ -11,8 +11,8 @@
 #{$Selector}
 {
 	Font-family: #{$Font_UI};
-	Font-variant-numeric: Tabular-nums;
 	Font-weight: 500;
+	Font-variant-numeric: Tabular-nums;
 
 	@media #{$WideScreen}
 	{

@@ -14,8 +14,6 @@
 
 #{$Selector}
 {
-	Z-index: 1;
-
 	@media #{$WideScreen}
 	{
 		@include Elevation(0, 0);
@@ -30,6 +28,7 @@
 		Top: 0;
 		Transition: Box-shadow 250ms, Background-color 250ms;
 		Width: 100%;
+		Z-index: 1;
 
 		@media (Prefers-reduced-motion: Reduce)
 		{

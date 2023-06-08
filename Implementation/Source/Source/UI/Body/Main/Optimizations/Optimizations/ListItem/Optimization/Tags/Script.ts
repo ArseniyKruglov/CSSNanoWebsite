@@ -6,19 +6,12 @@ import { ListItem } from './ListItem/Script'
 
 export namespace Tags
 {
-	export interface Interface
-	{
-		'Tags': Entities.Tag.Tag.Interface[]
-	}
-
-
-
-	export function Get(Argument: Interface): HTMLUListElement
+	export function Get(Tags: Entities.Tag.Tag.Interface[]): HTMLUListElement
 	{
 		return <HTMLUListElement> BaseElement.Create
 		({
 			'HTMLTag': 'UL',
-			'Children': Argument.Tags.map((Tag) => ListItem.Get(Tag))
+			'Children': Tags.map((Tag) => ListItem.Get(Tag))
 		})
 	}
 }

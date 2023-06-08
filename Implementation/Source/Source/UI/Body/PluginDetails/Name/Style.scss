@@ -1,5 +1,6 @@
 @import '../../../Constants';
 
+@import '../../../../../../../../Library/Code/Frontend/Source/FontSizes';
 @import '../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
 @import './Selector';
@@ -10,15 +11,16 @@
 {
 	Font-family: #{$Font_Title};
 	Font-weight: 400;
+	Line-height: 1.05;
 	User-select: Text;
 
 	@media #{$WideScreen}
 	{
-		Font-size: 60px;
+		Font-size: #{$FontSize_64};
 	}
 
 	@media #{$NarrowScreen}
 	{
-		Font-size: 36px;
+		Font-size: #{$FontSize_36};
 	}
 }

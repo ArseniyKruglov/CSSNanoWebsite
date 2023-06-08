@@ -6,6 +6,17 @@ import { Element_ListItem } from './ListItem/Script'
 
 export namespace Element_Plugins
 {
+	export function Get(PluginsList: Entities.Plugin.Interface[], SortingType: SortingType.Interface): HTMLUListElement
+	{
+		return <HTMLUListElement> BaseElement.Create
+		({
+			'HTMLTag': 'UL',
+			'Children': ((SortingType.Function)(PluginsList)).map((Plugin) => Element_ListItem.Get(Plugin))
+		})
+	}
+
+
+
 	export namespace SortingType
 	{
 		export type Type_ReadableName = string
@@ -35,16 +46,5 @@ export namespace Element_Plugins
 				'Function': (Plugins) => Plugins
 			}
 		}
-	}
-
-
-
-	export function Get(PluginsList: Entities.Plugin.Interface[], SortingType: SortingType.Interface): HTMLUListElement
-	{
-		return <HTMLUListElement> BaseElement.Create
-		({
-			'HTMLTag': 'UL',
-			'Children': (SortingType.Function)(PluginsList).map((Plugin) => Element_ListItem.Get(Plugin))
-		})
 	}
 }

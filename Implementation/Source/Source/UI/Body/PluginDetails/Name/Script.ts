@@ -10,10 +10,6 @@ export namespace Element_Name
 
 	export function Get(Name: Type_Name): ReturnType<typeof LibraryElement_Heading.Get>
 	{
-		return LibraryElement_Heading.Get
-		(
-			Name,
-			1
-		)
+		return LibraryElement_Heading.Get(Name, 1)
 	}
 }

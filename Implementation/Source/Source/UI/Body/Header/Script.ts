@@ -18,13 +18,24 @@ export namespace Element_Header
 			],
 			'Modifications': (Element) =>
 			{
-				document.addEventListener('scroll', () =>
-				{
-					const Scrolled: boolean = document.documentElement.scrollTop !== 0
-
-					Element.classList.toggle('Scrolled', Scrolled)
-				})
+				document.addEventListener('scroll', () => { HandleScroll(<HTMLElement> Element) })
 			}
 		})
+	}
+
+
+
+	function HandleScroll(Element: ReturnType<typeof Get>): void
+	{
+		Element.classList.toggle('Scrolled', IsElementScrolled(document.documentElement))
+	}
+
+
+
+	// TODO: To Library
+
+	function IsElementScrolled(Element: HTMLElement): boolean
+	{
+		return Element.scrollTop !== 0
 	}
 }

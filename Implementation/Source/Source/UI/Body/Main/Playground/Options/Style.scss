@@ -16,9 +16,9 @@ $Shadow: Shadows.$Medium;
 
 #{$Selector}
 {
-	Border-radius: #{$BorderRadius_Big};
-	Box-shadow: #{$Shadow};
 	Padding: #{$Padding};
+	Box-shadow: #{$Shadow};
+	Border-radius: #{$BorderRadius_Big};
 
 	@media (Prefers-color-scheme: Dark)
 	{
@@ -32,6 +32,8 @@ $Shadow: Shadows.$Medium;
 
 	@media (Forced-colors: Active), (Prefers-contrast: More)
 	{
-		Border: 2px Solid CanvasText;
+		Border-color: CanvasText;
+		Border-style: Solid;
+		Border-width: 2px;
 	}
 }

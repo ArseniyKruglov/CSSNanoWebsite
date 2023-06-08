@@ -1,20 +1,16 @@
 import { BaseElement } from '../../../../../../../../../../../../../../Library/Code/Frontend/Source/BaseElement'
 import { LibraryElement_Chip } from '../../../../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Chip/Script'
-import * as Entities from '../../../../../../../../../../Entities/Namespace'
+import { Entities } from '../../../../../../../../../../Main'
 
 
 
-export namespace Chip
+export namespace Element_Chip
 {
-	export function Get(Tag: Entities.Tag.Tag.Interface): HTMLLIElement
+	export function Get(Tag: Entities.Tag.Tag.Interface): ReturnType<typeof LibraryElement_Chip.Get>
 	{
-		return <HTMLLIElement> BaseElement.Create
+		return <ReturnType<typeof LibraryElement_Chip.Get>> BaseElement.Create
 		({
-			'Element': LibraryElement_Chip.Get
-			(
-				Tag.ReadableName,
-				true
-			),
+			'Element': LibraryElement_Chip.Get(Tag.ReadableName, true),
 			'Classes': [Tag.ID]
 		})
 	}

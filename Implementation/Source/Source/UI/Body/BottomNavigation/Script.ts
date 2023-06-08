@@ -5,7 +5,7 @@ import { Data } from '../../../Main'
 
 export namespace Element_BottomNavigation
 {
-	export function Get(): HTMLElement
+	export function Get(): ReturnType<typeof LibraryElement_BottomNavigation.Get>
 	{
 		return LibraryElement_BottomNavigation.Get
 		(

@@ -24,7 +24,6 @@ export namespace Element_Statistics
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'HTMLTag': 'Div',
 			'Classes': ['Statistics'],
 			'Children':
 			[

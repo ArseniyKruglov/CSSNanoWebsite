@@ -1,6 +1,5 @@
 @import '../../../../../../../Constants';
 
-@import '../../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Paragraph/Style';
 @import '../../../../../../../../../../../../Library/Code/Frontend/Source/MediaQueries/ScreenWidth/Style';
 
 @import './Selector';
@@ -13,11 +12,6 @@
 	Margin-block: 0 17.5px;
 	Margin-inline-start: 0.5px;
 	User-select: Text;
-
-	@media #{$WideScreen}
-	{
-		Font-size: 15.5px;
-	}
 
 	@media #{$NarrowScreen}
 	{

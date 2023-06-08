@@ -6,16 +6,16 @@
 
 
 
-$Gap: 10px;
+$Gap: $BorderRadius_Medium * 2;
 $MinCardWidth: 400px;
 
 
 
 #{$Selector}
 {
-	List-style: None;
-	Margin-block-end: 0;
 	Padding: 0;
+	Margin-block-end: 0;
+	List-style: None;
 
 	@media #{$WideScreen}
 	{

@@ -13,35 +13,28 @@
 {
 	@media #{$WideScreen}
 	{
-		Padding-block-end: #{$Padding};
+		Padding-block-end: 20px;
 		Padding-block-start: 15px;
-		Padding-inline: #{$Padding};
+		Padding-inline: 20px;
 	}
 
 	&::After
 	{
-		Background: Linear-gradient(#FFF,  Transparent 10%);
-		Content: '';
-		Display: Block;
-		Height: 100%;
-		Left: 0;
-		Pointer-events: None;
-		Position: Fixed;
-		Width: 100%;
-
 		@media #{$WideScreen}
 		{
+			Background: Linear-gradient(#FFF 5%,  Transparent 5%);
+			Content: '';
+			Display: Block;
+			Height: 100%;
+			Pointer-events: None;
+			Position: Fixed;
 			Top: 65px;
-		}
+			Width: 100%;
 
-		@media #{$NarrowScreen}
-		{
-			Top: 0;
-		}
-
-		@media (Prefers-color-scheme: Dark)
-		{
-			Background: Linear-gradient(#000,  Transparent 10%);
+			@media (Prefers-color-scheme: Dark)
+			{
+				Background: Linear-gradient(#000 5%,  Transparent 5%);
+			}
 		}
 	}
 }

@@ -11,13 +11,9 @@
 
 
 
-$Elevation: 0;
-
-
-
 #{$Selector}
 {
-	@include Elevation($Elevation, 0);
+	@include Elevation(0, 0);
 
 	Margin: 0;
 }

@@ -3,6 +3,7 @@ import { LibraryElement_FullscreenDialog } from '../../../../../../../Library/Co
 import * as Entities from '../../../Entities/Namespace'
 import { Element_Description } from './Description/Script'
 import { Element_Name } from './Name/Script'
+import { Element_Tags } from './Tags/Script'
 
 
 
@@ -16,12 +17,14 @@ export namespace Element_PluginDetails
 			'Children':
 			[
 				Element_Name.Get(Plugin.ReadableName),
-				Element_Description.Get(Plugin.Description)
+				Element_Description.Get(Plugin.Description),
+				Element_Tags.Get(Plugin.Tags)
 			],
 			'OnDraw': (Element) =>
 			{
 				Open(<HTMLDialogElement> Element)
-				SetTabTitle(Plugin.ReadableName)
+				TabTitle_Set(Plugin.ReadableName)
+				Element.addEventListener('close', () => { OnClose() })
 			}
 		})
 	}
@@ -33,8 +36,22 @@ export namespace Element_PluginDetails
 		Dialog.showModal()
 	}
 
-	function SetTabTitle(ReadableName: Entities.Plugin.Type_ReadableName): void
+
+
+	function OnClose(): void
+	{
+		TabTitle_Reset()
+	}
+
+
+
+	function TabTitle_Set(ReadableName: Entities.Plugin.Type_ReadableName): void
 	{
 		document.title = ReadableName
+	}
+
+	function TabTitle_Reset(): void
+	{
+		document.title = 'CSS Nano'
 	}
 }

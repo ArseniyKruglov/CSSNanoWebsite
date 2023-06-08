@@ -10,13 +10,12 @@ export namespace Element_Code
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'HTMLTag': 'Div',
 			'Classes': ['Code'],
 			'Children':
 			[
-				ChildrenElement_Code.Get('Before'),
+				ChildrenElement_Code.Get('Code'),
 				Element_Arrow.Get(),
-				ChildrenElement_Code.Get('After')
+				ChildrenElement_Code.Get('Code, but optimized!')
 			]
 		})
 	}

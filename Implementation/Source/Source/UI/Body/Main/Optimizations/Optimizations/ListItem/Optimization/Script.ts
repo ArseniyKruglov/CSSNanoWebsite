@@ -19,7 +19,7 @@ export namespace Element_Plugin
 			[
 				Name.Get(Plugin.ReadableName),
 				Description.Get(Plugin.Description),
-				Tags.Get({ 'Tags': Plugin.Tags })
+				Tags.Get(Plugin.Tags)
 			],
 			'Modifications': (Element) =>
 			{
@@ -32,11 +32,11 @@ export namespace Element_Plugin
 			}
 		})
 	}
-}
 
 
 
-function ShowDetails(Plugin: Entities.Plugin.Interface): void
-{
-	document.body.appendChild(Element_PluginDetails.Get(Plugin))
+	function ShowDetails(Plugin: Entities.Plugin.Interface): void
+	{
+		document.body.appendChild(Element_PluginDetails.Get(Plugin))
+	}
 }

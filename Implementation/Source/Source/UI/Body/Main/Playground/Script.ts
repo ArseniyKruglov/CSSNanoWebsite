@@ -11,7 +11,6 @@ export namespace Element_Playground
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({
-			'HTMLTag': 'Div',
 			'Classes': ['Playground'],
 			'Children':
 			[

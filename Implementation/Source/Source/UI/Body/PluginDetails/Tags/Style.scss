@@ -1,0 +1,11 @@
+@import './Tag/Style';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Margin-block: 50px;
+	Padding-inline-start: 25px;
+}

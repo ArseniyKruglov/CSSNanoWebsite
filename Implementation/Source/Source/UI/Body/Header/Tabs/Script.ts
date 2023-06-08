@@ -5,7 +5,7 @@ import { Data } from '../../../../Main'
 
 export namespace Element_Tabs
 {
-	export function Get(): HTMLElement
+	export function Get(): ReturnType<typeof LibraryElement_Tabs.Get>
 	{
 		return LibraryElement_Tabs.Get
 		(

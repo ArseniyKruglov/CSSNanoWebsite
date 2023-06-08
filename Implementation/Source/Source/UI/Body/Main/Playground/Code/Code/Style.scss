@@ -9,15 +9,17 @@
 
 #{$Selector}
 {
-	Border: 1px Solid #{Gray(75%)};
+	Border-color: #{Gray(75%)};
 	Border-radius: #{$BorderRadius_Medium};
+	Border-style: Solid;
+	Border-width: 1px;
 	Font-family: #{$Font_Monospace};
 	Font-size: 14px;
 	Outline: None;
 	Overflow: Auto;
 	Padding: 25px;
-	User-select: Text;
 	Transition: Border-color 250ms;
+	White-space: Pre-wrap;
 
 	@media #{$NarrowScreen}
 	{
@@ -28,6 +30,11 @@
 	@media (Prefers-color-scheme: Dark)
 	{
 		Border-color: #{Gray(25%)};
+	}
+
+	@media (Prefers-reduced-motion: Reduce), (Update: Slow)
+	{
+		Transition: None;
 	}
 
 	&:Hover
