@@ -1,5 +1,6 @@
 import { BaseElement } from '../../../../../../../../../../Library/Code/Frontend/Source/BaseElement';
-import { Optimize } from '../../../../../../Logic/Optimize';
+import { Preset } from '../../../../../../Data/Preset';
+import { Optimizator } from '../../../../../../Logic/Optimizator';
 
 
 
@@ -26,7 +27,7 @@ export namespace Element_Code
 				if (Element !== OutputElement)
 					Element.addEventListener('input', () =>
 					{
-						OutputElement.innerHTML = Optimize(Element.innerHTML)
+						OutputElement.innerHTML = Optimizator.Process(Element.innerHTML, Preset.Enum.Default)
 					})
 			}
 		})

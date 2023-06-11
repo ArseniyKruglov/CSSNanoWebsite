@@ -22,18 +22,18 @@
 	{
 		@media #{$WideScreen}
 		{
-			Background: Linear-gradient(#FFF 5%,  Transparent 5%);
+			Background-color: #FFF;
 			Content: '';
 			Display: Block;
-			Height: 100%;
-			Pointer-events: None;
+			Width: 100%;
+			Height: 5%;
 			Position: Fixed;
 			Top: 65px;
-			Width: 100%;
+			Left: 0;
 
 			@media (Prefers-color-scheme: Dark)
 			{
-				Background: Linear-gradient(#000 5%,  Transparent 5%);
+				Background-color: #000;
 			}
 		}
 	}
