@@ -20,21 +20,27 @@
 
 	&::After
 	{
+		Background: Linear-gradient(#FFF, #FFF, Transparent);
+		Content: '';
+		Display: Block;
+		Width: 100%;
+		Height: 5%;
+		Position: Fixed;
+		Left: 0;
+
+		@media (Prefers-color-scheme: Dark)
+		{
+			Background: #000;
+		}
+
 		@media #{$WideScreen}
 		{
-			Background-color: #FFF;
-			Content: '';
-			Display: Block;
-			Width: 100%;
-			Height: 5%;
-			Position: Fixed;
 			Top: 65px;
-			Left: 0;
+		}
 
-			@media (Prefers-color-scheme: Dark)
-			{
-				Background-color: #000;
-			}
+		@media #{$NarrowScreen}
+		{
+			Top: 0;
 		}
 	}
 }

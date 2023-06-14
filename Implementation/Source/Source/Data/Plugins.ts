@@ -1,5 +1,5 @@
 import { Tags } from '../Data/Tags'
-import * as Plugin from '../Entities/Plugin'
+import { Plugin } from '../Entities/Plugin'
 
 
 

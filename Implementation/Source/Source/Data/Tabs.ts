@@ -5,18 +5,18 @@ import { Tab } from '../Entities/Tab'
 export const List: Tab.Interface[] =
 [
 	{
-		'ID': 'About',
-		'ReadableName': 'About',
+		'ID': 'Features',
+		'ReadableName': 'Features',
 		'IconName': 'auto_awesome'
 	},
 	{
-		'ID': 'Optimizations',
-		'ReadableName': 'Optimizations',
+		'ID': 'Plugins',
+		'ReadableName': 'Plugins',
 		'IconName': 'receipt_long'
 	},
 	{
-		'ID': 'Playground',
-		'ReadableName': 'Playground',
-		'IconName': 'code'
+		'ID': 'Demo',
+		'ReadableName': 'Demo',
+		'IconName': 'science'
 	}
 ]
