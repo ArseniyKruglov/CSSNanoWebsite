@@ -7,27 +7,28 @@ export default WebpackConfigGenerator.Get
 	'Mode': WebpackConfigGenerator.Enum_Mode.Development,
 	'Source':
 	{
-		'RootDirectory': __dirname,
-		'Entry': './Source/Main.ts',
-		'Favicon': './Source/Favicon.svg'
+		'Folder': __dirname,
+		'EntryFile': './Source/Main.ts',
+		'Favicon': './Favicon.svg'
 	},
 	'Output':
 	{
-		'Directory':
+		'Folder':
 		{
 			'Development': '../Webpage/',
 			'Production': '../Webpage/'
 		},
-		'RootURL':
+		'URL':
 		{
 			'Development': '/Implementation/Webpage/',
 			'Production': '/'
-		},
+		}
 	},
-	'Info':
+	'Metadata':
 	{
 		'Name': 'CSS Nano',
 		'Description': 'CSS Nano is a modern, modular compression tool written on top of the PostCSS ecosystem.',
+		'Keywords': [],
 		'Authors': ['Arseniy Kruglov']
 	}
 })
