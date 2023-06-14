@@ -2,11 +2,13 @@
 	"private": true,
 	"scripts":
 	{
-		"Dev": "webpack"
+		"Dev": "webpack",
+		"Test": "editorconfig-checker"
 	},
 	"devDependencies":
 	{
 		"css-loader": "^6.7.3",
+		"editorconfig-checker": "^5.0.1",
 		"postcss": "^8.4.24",
 		"postcss-loader": "^7.3.0",
 		"postcss-nested-ancestors": "^3.0.0",
