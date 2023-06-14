@@ -1,3 +1,3 @@
 export { Plugin } from './Plugin'
-export * as Tab from './Tab'
-export * as Tag from './Tag'
+export { Tab } from './Tab'
+export { Tag } from './Tag'

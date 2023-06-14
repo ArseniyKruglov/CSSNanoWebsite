@@ -6,7 +6,7 @@ import { Element_Description } from './Description/Style'
 
 export namespace Element_Tag
 {
-	export function Get(Tag: Entities.Tag.Tag.Interface): HTMLDivElement
+	export function Get(Tag: Entities.Tag.Interface): HTMLDivElement
 	{
 		return <HTMLDivElement> BaseElement.Create
 		({

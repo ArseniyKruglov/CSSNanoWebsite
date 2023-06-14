@@ -6,7 +6,7 @@ import { ListItem } from './ListItem/Script'
 
 export namespace Tags
 {
-	export function Get(Tags: Entities.Tag.Tag.Interface[]): HTMLUListElement
+	export function Get(Tags: Entities.Tag.Interface[]): HTMLUListElement
 	{
 		return <HTMLUListElement> BaseElement.Create
 		({

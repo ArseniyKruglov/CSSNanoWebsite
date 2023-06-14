@@ -6,7 +6,7 @@ import { Entities } from '../../../../../../../../../../Main'
 
 export namespace Element_Chip
 {
-	export function Get(Tag: Entities.Tag.Tag.Interface): ReturnType<typeof LibraryElement_Chip.Get>
+	export function Get(Tag: Entities.Tag.Interface): ReturnType<typeof LibraryElement_Chip.Get>
 	{
 		return <ReturnType<typeof LibraryElement_Chip.Get>> BaseElement.Create
 		({
