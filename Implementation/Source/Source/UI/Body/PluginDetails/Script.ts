@@ -17,8 +17,7 @@ export namespace Element_PluginDetails
 			'Children':
 			[
 				Element_Name.Get(Plugin.Name),
-				Element_Description.Get(Plugin.Description),
-				Element_Tags.Get(Plugin.Tags)
+				Element_Description.Get(Plugin.Description)
 			],
 			'OnDraw': (Element) =>
 			{

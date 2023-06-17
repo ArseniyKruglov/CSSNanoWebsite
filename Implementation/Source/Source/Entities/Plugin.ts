@@ -1,3 +1,4 @@
+import { Data, Entities } from '../Main'
 import { Tag } from './Tag'
 
 
@@ -24,8 +25,8 @@ export namespace Plugin
 		'ID': Type_ID
 		'Name': Type_Name
 		'Description': Type_Description
+		'Preset': Data.Preset.Enum
 		'SafetyLevel': Enum_SafetyLevel
 		'Configurable'?: boolean
-		'Tags': Tag.Interface[]
 	}
 }

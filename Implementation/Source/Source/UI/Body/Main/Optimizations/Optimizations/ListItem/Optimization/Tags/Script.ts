@@ -11,7 +11,7 @@ export namespace Element_Tags
 		return <HTMLUListElement> BaseElement.Create
 		({
 			'HTMLTag': 'UL',
-			'Children': [GetTagBySafetyLevel(Plugin.SafetyLevel), ...Plugin.Tags].map((Tag) => ListItem.Get(Tag))
+			'Children': [ListItem.Get(GetTagBySafetyLevel(Plugin.SafetyLevel))]
 		})
 	}
 
