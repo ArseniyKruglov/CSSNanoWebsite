@@ -4,5 +4,9 @@
 		"**/node_modules/": true,
 		"**/package-lock.json": true
 	},
+	"editor.codeActionsOnSave":
+	{
+		"source.organizeImports": true
+	},
 	"files.trimTrailingWhitespace": true
 }
