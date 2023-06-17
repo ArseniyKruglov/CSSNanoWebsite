@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - run: cd Implementation/Source/
+    - run: cd ./Implementation/Source/
     - name: Use Node.js
       uses: actions/setup-node@v3
       with:
