@@ -9,195 +9,228 @@ export namespace Plugins
 	[
 		{
 			'ID': 'Autoprefixer',
-			'ReadableName': 'Autoprefixer',
+			'Name': 'Autoprefixer',
 			'Description': 'Removes unnecessary prefixes based on the browsers option. Note that by default, it will not add new prefixes to the CSS file.',
-			'Tags': [Tags.List.Unsafe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Unsafe,
+			'Tags': []
 		},
 		{
 			'ID': 'DeclarationSorter',
-			'ReadableName': 'Declaration sorter',
+			'Name': 'Declaration sorter',
 			'Description': 'Sorts CSS declarations based on their property names.',
-			'Tags': [Tags.List.Safe, Tags.List.Compression]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': [Tags.List.Compression]
 		},
 		{
 			'ID': 'Calc',
-			'ReadableName': 'Calc',
+			'Name': 'Calc',
 			'Description': 'Reduces CSS calc expressions whereever possible, ensuring both browser compatibility and compression.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'Colormin',
-			'ReadableName': 'Colormin',
+			'Name': 'Colormin',
 			'Description': 'Converts between hex, HSL, RGB and CSS keywords, in order to produce the smallest equivalent color value.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'ConvertValues',
-			'ReadableName': 'Convert values',
+			'Name': 'Convert values',
 			'Description': 'Converts between equivalent length, time and angle values.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'DiscardComments',
-			'ReadableName': 'Discard comments',
+			'Name': 'Discard comments',
 			'Description': 'Removes comments.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'DiscardExactDuplicates',
-			'ReadableName': 'Discard exact duplicates',
+			'Name': 'Discard exact duplicates',
 			'Description': 'Removes exact duplicated rules, at-rules and declarations.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'DiscardEmpty',
-			'ReadableName': 'Discard empty',
+			'Name': 'Discard empty',
 			'Description': 'Removes empty rules, media queries and rules with empty selectors, as they do not affect the output.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'DiscardOverridden',
-			'ReadableName': 'Discard overridden',
+			'Name': 'Discard overridden',
 			'Description': 'Removes at-rules which have the same identifier as another.',
-			'Tags': [Tags.List.Unsafe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Unsafe,
+			'Tags': []
 		},
 		{
 			'ID': 'DiscardUnused',
-			'ReadableName': 'Discard unused',
+			'Name': 'Discard unused',
 			'Description': 'Removes at-rules that do not have any bearing on the CSS file.',
-			'Tags': [Tags.List.SafeInsideOneFile]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.SafeInsideOneFile,
+			'Tags': []
 		},
 		{
 			'ID': 'MergeIdents',
-			'ReadableName': 'Merge idents',
+			'Name': 'Merge idents',
 			'Description': 'This will merge rules together that may have slightly different naming but do the same thing. Note that this is only unsafe if you rely on those animation names in JavaScript.',
-			'Tags': [Tags.List.SafeInsideOneFile]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.SafeInsideOneFile,
+			'Tags': []
 		},
 		{
 			'ID': 'MergeLonghand',
-			'ReadableName': 'Merge longhand',
+			'Name': 'Merge longhand',
 			'Description': 'Collapses longhand properties into the shorthand representation, and where possible will also collapse top/right/bottom/left values. Supports margin, padding & border longhands.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'MergeRules',
-			'ReadableName': 'Merge rules',
+			'Name': 'Merge rules',
 			'Description': 'Merges adjacent rules by selectors & overlapping property/value pairs.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'MinifyFontValues',
-			'ReadableName': 'Minify font values',
+			'Name': 'Minify font values',
 			'Description': 'Normalizes font & font-family declarations, and can convert font weight keywords to numeric values.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'MinifyGradients',
-			'ReadableName': 'Minify gradients',
+			'Name': 'Minify gradients',
 			'Description': 'Normalizes linear and radial gradient parameters.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'MinifyParams',
-			'ReadableName': 'Minify params',
+			'Name': 'Minify params',
 			'Description': 'Trims whitespace and normalizes at-rule parameters.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'MinifySelectors',
-			'ReadableName': 'Minify selectors',
+			'Name': 'Minify selectors',
 			'Description': 'Removes unnecessary qualified universal selectors, unquotes attribute selectors, trims & normalizes selector strings',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'NormalizeCharset',
-			'ReadableName': 'Normalize charset',
+			'Name': 'Normalize charset',
 			'Description': 'Ensures that only a single @charset is present in the CSS file, and moves it to the top of the document.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'NormalizeDisplayValues',
-			'ReadableName': 'Normalize display values',
+			'Name': 'Normalize display values',
 			'Description': 'Normalizes the two value syntax for display into the single value syntax where possible.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'NormalizePositions',
-			'ReadableName': 'Normalize positions',
+			'Name': 'Normalize positions',
 			'Description': 'Normalizes position values in the background, background-position, -webkit-perspective-origin and perspective-origin properties.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'NormalizeRepeatStyle',
-			'ReadableName': 'Normalize repeat style',
+			'Name': 'Normalize repeat style',
 			'Description': 'Reduces the two value syntax for background-repeat into the single value syntax where possible, in both the property itself and the background shorthand. Also works for mask-repeat.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'NormalizeString',
-			'ReadableName': 'Normalize string',
+			'Name': 'Normalize string',
 			'Description': 'Standardises the usage of double or single quoted strings. Can also remove linebreaks which are inserted for aesthetic purposes.',
-			'Tags': [Tags.List.Safe, Tags.List.Compression, Tags.List.Configurable]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Configurable': true,
+			'Tags': [Tags.List.Compression]
 		},
 		{
 			'ID': 'NormalizeTimingFunctions',
-			'ReadableName': 'Normalize timing functions',
+			'Name': 'Normalize timing functions',
 			'Description': 'Normalizes transition timing in the animation, animation-timing-function, transition and transition-timing-function properties.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'NormalizeUnicode',
-			'ReadableName': 'Normalize unicode',
+			'Name': 'Normalize unicode',
 			'Description': 'This optimisation can convert unicode-range descriptors to use the shorter wildcard ranges when a particular value meets the wildcard criteria.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'NormalizeURL',
-			'ReadableName': 'Normalize URL',
+			'Name': 'Normalize URL',
 			'Description': 'Normalizes URL strings. It can remove default ports, resolve unnecessary directory traversal & unquote the value.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'NormalizeWhitespace',
-			'ReadableName': 'Normalize whitespace',
+			'Name': 'Normalize whitespace',
 			'Description': 'Trims whitespace inside and around rules, selectors & declarations, plus removes the final semicolon inside every selector.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'OrderedValues',
-			'ReadableName': 'Ordered values',
+			'Name': 'Ordered values',
 			'Description': 'Properties affected by this transform can accept their arguments in an arbitrary order. This module normalizes that order, facilitating easier de-duplication.',
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
 			'Tags': [Tags.List.Compression]
 		},
 		{
 			'ID': 'ReduceIdents',
-			'ReadableName': 'Reduce idents',
+			'Name': 'Reduce idents',
 			'Description': 'Renames at-rules such as @keyframes.',
-			'Tags': [Tags.List.SafeInsideOneFile]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.SafeInsideOneFile,
+			'Tags': []
 		},
 		{
 			'ID': 'ReduceInitial',
-			'ReadableName': 'Reduce initial',
+			'Name': 'Reduce initial',
 			'Description': 'Replaces the CSS initial keyword with the actual value, when the resulting output is smaller.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'ReduceTransforms',
-			'ReadableName': 'Reduce transforms',
+			'Name': 'Reduce transforms',
 			'Description': 'Converts between transform functions when there is a shorthand equivalent.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'UniqueSelectors',
-			'ReadableName': 'Unique selectors',
+			'Name': 'Unique selectors',
 			'Description': 'Naturally sorts selectors for every rule, and removes duplicates.',
-			'Tags': [Tags.List.Safe]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.Safe,
+			'Tags': []
 		},
 		{
 			'ID': 'ZIndex',
-			'ReadableName': 'Z-index',
+			'Name': 'Z-index',
 			'Description': 'Rebases z-index values. This is unsafe as it could potentially clash with other stylesheets, or JavaScript injected styles. However, it is safe if your stacking context has wholly been extracted into CSS.',
-			'Tags': [Tags.List.SafeInsideOneFile]
+			'SafetyLevel': Plugin.Enum_SafetyLevel.SafeInsideOneFile,
+			'Tags': []
 		}
 	]
 }

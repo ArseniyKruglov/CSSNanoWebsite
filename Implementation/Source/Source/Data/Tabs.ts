@@ -8,17 +8,17 @@ export namespace Tabs
 	[
 		{
 			'ID': 'Features',
-			'ReadableName': 'Features',
+			'Name': 'Features',
 			'IconName': 'auto_awesome'
 		},
 		{
 			'ID': 'Plugins',
-			'ReadableName': 'Plugins',
+			'Name': 'Plugins',
 			'IconName': 'receipt_long'
 		},
 		{
 			'ID': 'Demo',
-			'ReadableName': 'Demo',
+			'Name': 'Demo',
 			'IconName': 'science'
 		}
 	]

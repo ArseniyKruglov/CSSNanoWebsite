@@ -1,0 +1,37 @@
+@import '../../../../../Constants';
+
+@import '../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Chip/Style';
+
+@import './Selector';
+
+
+
+#{$Selector}
+{
+	Margin-inline-end: 10px;
+
+	&.Safe
+	{
+		@include Chip_Color($Color_Safe);
+	}
+
+	&.Unsafe
+	{
+		@include Chip_Color($Color_Unsafe);
+	}
+
+	&.Compression
+	{
+		@include Chip_Color($Color_Compression);
+	}
+
+	&.SafeInsideOneFile
+	{
+		@include Chip_Color($Color_SafeInsideOneFile);
+	}
+
+	&.Configurable
+	{
+		@include Chip_Color($Color_Configurable);
+	}
+}

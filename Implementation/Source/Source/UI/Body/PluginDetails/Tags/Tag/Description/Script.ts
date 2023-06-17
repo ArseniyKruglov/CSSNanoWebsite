@@ -5,8 +5,8 @@ import { Entities } from '../../../../../../Main';
 
 export namespace Element_Description
 {
-	export function Get(Description: Entities.Tag.Type_Description): ReturnType<typeof LibraryElement_Paragraph.Get>
+	export function Get(Tag: Entities.Tag.Interface): ReturnType<typeof LibraryElement_Paragraph.Get>
 	{
-		return LibraryElement_Paragraph.Get(Description)
+		return LibraryElement_Paragraph.Get(Tag.Description)
 	}
 }

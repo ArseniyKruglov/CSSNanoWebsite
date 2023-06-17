@@ -1,15 +1,12 @@
 import { LibraryElement_Paragraph } from '../../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Paragraph/Script'
+import { Entities } from '../../../../../../../../Main'
 
 
 
-export namespace Description
+export namespace Element_Description
 {
-	export type Type_Text = string
-
-
-
-	export function Get(Text: Type_Text): ReturnType<typeof LibraryElement_Paragraph.Get>
+	export function Get(Plugin: Entities.Plugin.Interface): ReturnType<typeof LibraryElement_Paragraph.Get>
 	{
-		return LibraryElement_Paragraph.Get(Text)
+		return LibraryElement_Paragraph.Get(Plugin.Description)
 	}
 }

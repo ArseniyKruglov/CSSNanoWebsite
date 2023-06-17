@@ -31,24 +31,4 @@
 	{
 		Border-color: #{Gray(25%)};
 	}
-
-	@media (Prefers-reduced-motion: Reduce), (Update: Slow)
-	{
-		Transition: None;
-	}
-
-	&:Hover
-	{
-		Border-color: #{Gray(50%)};
-	}
-
-	&:Focus
-	{
-		Border-color: #{Gray(25%)};
-
-		@media (Prefers-color-scheme: Dark)
-		{
-			Border-color: #{Gray(75%)};
-		}
-	}
 }

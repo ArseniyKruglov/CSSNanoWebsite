@@ -6,6 +6,12 @@
 
 #{$Selector}
 {
+	List-style-type: None;
 	Margin-block: 50px;
-	Padding-inline-start: 25px;
+	Padding: 0;
+
+	& > :Not(:First-child)
+	{
+		Margin-block-start: 10px;
+	}
 }

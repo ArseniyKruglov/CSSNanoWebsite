@@ -15,7 +15,7 @@ export namespace Element_Plugins
 			'Children':
 			[
 				Element_Filters.Get(),
-				ChildElement_Plugins.Get(PluginsList, ChildElement_Plugins.SortingType.SortingTypes.Tags)
+				ChildElement_Plugins.Get(PluginsList, ChildElement_Plugins.SortingType.SortingTypes.Safety)
 			]
 		})
 	}

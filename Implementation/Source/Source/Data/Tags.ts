@@ -9,21 +9,21 @@ export namespace Tags
 		'Safe':
 		{
 			'ID': 'Safe',
-			'ReadableName': 'Safe',
+			'Name': 'Safe',
 			'Description': 'Has no side effects.'
 		},
 
 		'SafeInsideOneFile':
 		{
 			'ID': 'SafeInsideOneFile',
-			'ReadableName': 'Safe inside one file',
+			'Name': 'Safe inside one file',
 			'Description': 'Safe inside one file.'
 		},
 
 		'Unsafe':
 		{
 			'ID': 'Unsafe',
-			'ReadableName': 'Unsafe',
+			'Name': 'Unsafe',
 			'Description': 'Might break your code.'
 		},
 
@@ -32,14 +32,14 @@ export namespace Tags
 		'Compression':
 		{
 			'ID': 'Compression',
-			'ReadableName': 'Compression',
+			'Name': 'Compression',
 			'Description': 'Optimizes code for better GZip or Brotli compression.'
 		},
 
 		'Configurable':
 		{
 			'ID': 'Configurable',
-			'ReadableName': 'Configurable',
+			'Name': 'Configurable',
 			'Description': 'Configurable.'
 		}
 	}

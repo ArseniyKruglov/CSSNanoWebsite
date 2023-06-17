@@ -10,7 +10,7 @@ export namespace Element_Chip
 	{
 		return <ReturnType<typeof LibraryElement_Chip.Get>> BaseElement.Create
 		({
-			'Element': LibraryElement_Chip.Get(Tag.ReadableName, true),
+			'Element': LibraryElement_Chip.Get(Tag.Name, true),
 			'Classes': [Tag.ID]
 		})
 	}

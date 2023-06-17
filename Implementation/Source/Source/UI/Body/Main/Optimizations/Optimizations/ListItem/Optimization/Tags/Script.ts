@@ -1,17 +1,31 @@
 import { BaseElement } from '../../../../../../../../../../../../Library/Code/Frontend/Source/BaseElement'
-import { Entities } from '../../../../../../../../Main'
+import { Data, Entities } from '../../../../../../../../Main'
 import { ListItem } from './ListItem/Script'
 
 
 
-export namespace Tags
+export namespace Element_Tags
 {
-	export function Get(Tags: Entities.Tag.Interface[]): HTMLUListElement
+	export function Get(Plugin: Entities.Plugin.Interface): HTMLUListElement
 	{
 		return <HTMLUListElement> BaseElement.Create
 		({
 			'HTMLTag': 'UL',
-			'Children': Tags.map((Tag) => ListItem.Get(Tag))
+			'Children': [GetTagBySafetyLevel(Plugin.SafetyLevel), ...Plugin.Tags].map((Tag) => ListItem.Get(Tag))
 		})
+	}
+
+
+
+	function GetTagBySafetyLevel(SafetyLevel: Entities.Plugin.Enum_SafetyLevel): Entities.Tag.Interface
+	{
+		if (SafetyLevel === Entities.Plugin.Enum_SafetyLevel.Safe)
+			return Data.Tags.List.Safe
+
+		if (SafetyLevel === Entities.Plugin.Enum_SafetyLevel.SafeInsideOneFile)
+			return Data.Tags.List.SafeInsideOneFile
+
+		if (SafetyLevel === Entities.Plugin.Enum_SafetyLevel.Unsafe)
+			return Data.Tags.List.Unsafe
 	}
 }

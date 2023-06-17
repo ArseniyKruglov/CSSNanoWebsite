@@ -19,31 +19,31 @@ export namespace Element_Plugins
 
 	export namespace SortingType
 	{
-		export type Type_ReadableName = string
+		export type Type_Name = string
 		export type Type_Function = (Plugins: Entities.Plugin.Interface[]) => Entities.Plugin.Interface[]
 
 
 
 		export interface Interface
 		{
-			'ReadableName': Type_ReadableName
+			'Name': Type_Name
 			'Function': (Plugins: Entities.Plugin.Interface[]) => Entities.Plugin.Interface[]
 		}
 
 
 
-		export const SortingTypes: { [Key in Type_ReadableName]: Interface } =
+		export const SortingTypes: { [Key in Type_Name]: Interface } =
 		{
 			'Alphabetical':
 			{
-				'ReadableName': 'Alphabetical',
-				'Function': (Plugins) => Plugins.sort((Plugin_1, Plugin_2) => Plugin_1.ReadableName.localeCompare(Plugin_2.ReadableName))
+				'Name': 'Alphabetical',
+				'Function': (Plugins) => Plugins.sort((Plugin_1, Plugin_2) => Plugin_1.Name.localeCompare(Plugin_2.Name))
 			},
 
-			'Tags':
+			'Safety':
 			{
-				'ReadableName': 'Tags',
-				'Function': (Plugins) => Plugins
+				'Name': 'Safety',
+				'Function': (Plugins) => Plugins.sort((Plugin_1, Plugin_2) => Plugin_1.SafetyLevel - Plugin_2.SafetyLevel)
 			}
 		}
 	}

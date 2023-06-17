@@ -2,9 +2,9 @@ import { BaseElement } from '../../../../../../../../../../../Library/Code/Front
 import { LibraryElement_Link } from '../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Link/Script'
 import { Entities } from '../../../../../../../Main'
 import { Element_PluginDetails } from '../../../../../PluginDetails/Script'
-import { Description } from './Description/Script'
-import { Name } from './Name/Script'
-import { Tags } from './Tags/Script'
+import { Element_Description } from './Description/Script'
+import { Element_Name } from './Name/Script'
+import { Element_Tags } from './Tags/Script'
 
 
 
@@ -17,9 +17,9 @@ export namespace Element_Plugin
 			'Element': LibraryElement_Link.Get(Plugin.ID),
 			'Children':
 			[
-				Name.Get(Plugin.ReadableName),
-				Description.Get(Plugin.Description),
-				Tags.Get(Plugin.Tags)
+				Element_Name.Get(Plugin),
+				Element_Description.Get(Plugin),
+				Element_Tags.Get(Plugin)
 			],
 			'Modifications': (Element) =>
 			{

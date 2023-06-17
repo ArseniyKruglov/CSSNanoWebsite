@@ -1,4 +1,5 @@
 @import './Description/Style';
+@import './Tag/Style';
 
 @import './Selector';
 
@@ -6,5 +7,6 @@
 
 #{$Selector}
 {
-
+	Display: Flex;
+	Align-items: Center;
 }

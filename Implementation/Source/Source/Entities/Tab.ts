@@ -5,7 +5,7 @@ import { LibraryElement_Icon } from '../../../../../Library/Code/Frontend/Source
 export namespace Tab
 {
 	export type Type_ID = string
-	export type Type_ReadableName = string
+	export type Type_Name = string
 	export type Type_IconName = LibraryElement_Icon.Type_Name
 
 
@@ -13,7 +13,7 @@ export namespace Tab
 	export interface Interface
 	{
 		'ID': Type_ID
-		'ReadableName': Type_ReadableName
+		'Name': Type_Name
 		'IconName': Type_IconName
 	}
 }

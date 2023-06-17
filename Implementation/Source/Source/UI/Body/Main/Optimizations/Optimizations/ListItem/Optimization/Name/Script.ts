@@ -1,18 +1,15 @@
 import { LibraryElement_Heading } from '../../../../../../../../../../../../Library/Code/Frontend/Source/Elements/Elements/Heading/Script'
+import { Entities } from '../../../../../../../../Main'
 
 
 
-export namespace Name
+export namespace Element_Name
 {
-	export type Type_Text = string
-
-
-
-	export function Get(Text: Type_Text): ReturnType<typeof LibraryElement_Heading.Get>
+	export function Get(Plugin: Entities.Plugin.Interface): ReturnType<typeof LibraryElement_Heading.Get>
 	{
 		return LibraryElement_Heading.Get
 		(
-			Text,
+			Plugin.Name,
 			2
 		)
 	}

@@ -11,7 +11,7 @@ export namespace Element_BottomNavigation
 		(
 			Data.Tabs.List.map((Tab) =>
 			({
-				'Name': Tab.ReadableName,
+				'Name': Tab.Name,
 				'IconName': Tab.IconName,
 				'Link': Tab.ID,
 				'Selected': Tab === Data.Tabs.List[0]

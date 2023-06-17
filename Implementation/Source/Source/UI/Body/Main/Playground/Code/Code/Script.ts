@@ -15,21 +15,7 @@ export namespace Element_Code
 		return <HTMLElement> BaseElement.Create
 		({
 			'HTMLTag': 'Code',
-			'Text': Code,
-			'Modifications': (Element) =>
-			{
-				(<HTMLElement> Element).contentEditable = 'true'
-			},
-			'OnDraw': (Element) =>
-			{
-				const OutputElement: Element = Element.parentElement.lastElementChild
-
-				if (Element !== OutputElement)
-					Element.addEventListener('input', () =>
-					{
-						OutputElement.innerHTML = Optimizator.Process(Element.innerHTML, Preset.Enum.Default)
-					})
-			}
+			'Text': Code
 		})
 	}
 }

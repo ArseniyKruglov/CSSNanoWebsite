@@ -11,7 +11,7 @@ export namespace Element_Tabs
 		(
 			Data.Tabs.List.map((Tab) =>
 			({
-				'Name': Tab.ReadableName,
+				'Name': Tab.Name,
 				'Link': Tab.ID,
 				'Selected': Tab === Data.Tabs.List[0]
 			}))

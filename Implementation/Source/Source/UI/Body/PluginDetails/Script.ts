@@ -16,14 +16,14 @@ export namespace Element_PluginDetails
 			'Element': LibraryElement_FullscreenDialog.Get(),
 			'Children':
 			[
-				Element_Name.Get(Plugin.ReadableName),
+				Element_Name.Get(Plugin.Name),
 				Element_Description.Get(Plugin.Description),
 				Element_Tags.Get(Plugin.Tags)
 			],
 			'OnDraw': (Element) =>
 			{
 				Open(<HTMLDialogElement> Element)
-				TabTitle_Set(Plugin.ReadableName)
+				TabTitle_Set(Plugin.Name)
 				Element.addEventListener('close', () => { OnClose() })
 			}
 		})
@@ -45,9 +45,9 @@ export namespace Element_PluginDetails
 
 
 
-	function TabTitle_Set(ReadableName: Entities.Plugin.Type_ReadableName): void
+	function TabTitle_Set(Name: Entities.Plugin.Type_Name): void
 	{
-		document.title = ReadableName
+		document.title = Name
 	}
 
 	function TabTitle_Reset(): void
