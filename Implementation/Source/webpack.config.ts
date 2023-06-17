@@ -9,7 +9,7 @@ export default WebpackConfigGenerator.Get
 	{
 		'Folder': __dirname,
 		'EntryFile': './Source/Main.ts',
-		'Favicon': './Favicon.svg'
+		'Favicon': './Source/UI/Favicon.svg'
 	},
 	'Output':
 	{
